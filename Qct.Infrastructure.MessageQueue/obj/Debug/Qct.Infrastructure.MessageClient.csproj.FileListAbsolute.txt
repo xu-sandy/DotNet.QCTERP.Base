@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.MessageClient.dll.config
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.MessageClient.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.MessageClient.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.MessageQueue\obj\Debug\Qct.Infrastructure.MessageClient.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Infrastructure.MessageQueue\obj\Debug\Qct.Infrastructure.MessageClient.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.MessageQueue\obj\Debug\Qct.Infrastructure.MessageClient.pdb

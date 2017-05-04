@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.ERP.ApplicationService.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.ERP.ApplicationService.pdb
+E:\Workspace\QCT.ERP\Qct.ERP.ApplicationService\obj\Debug\Qct.ERP.ApplicationService.dll
+E:\Workspace\QCT.ERP\Qct.ERP.ApplicationService\obj\Debug\Qct.ERP.ApplicationService.pdb
+E:\Workspace\QCT.ERP\Qct.ERP.ApplicationService\obj\Debug\Qct.ERP.ApplicationService.csprojResolveAssemblyReference.cache

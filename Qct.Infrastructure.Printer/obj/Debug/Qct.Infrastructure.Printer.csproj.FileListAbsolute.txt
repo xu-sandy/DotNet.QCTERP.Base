@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Printer.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Printer.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Printer\obj\Debug\Qct.Infrastructure.Printer.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Printer\obj\Debug\Qct.Infrastructure.Printer.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Printer\obj\Debug\Qct.Infrastructure.Printer.csprojResolveAssemblyReference.cache

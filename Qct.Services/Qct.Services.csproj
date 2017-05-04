@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7AF1540-2B39-4546-B2F8-55AA61F2E0E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qct.Services</RootNamespace>
+    <AssemblyName>Qct.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Builds\CoreBuilds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.1.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.StrongName.1.2.1\lib\net45\StackExchange.Redis.StrongName.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization\StoreUserService.cs" />
+    <Compile Include="Authorization\SysUserService.cs" />
+    <Compile Include="CommonService.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedisCacheService.cs" />
+    <Compile Include="Systems\DeviceService.cs" />
+    <Compile Include="Systems\ImportSetService.cs" />
+    <Compile Include="Systems\SysMenuService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Allocation\" />
+    <Folder Include="Archives\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="Member\" />
+    <Folder Include="Purchase\" />
+    <Folder Include="Sync\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qct.Infrastructure.Data.EntityFramework\Qct.Infrastructure.Data.EntityFramework.csproj">
+      <Project>{9B13A1E8-117D-4610-9E47-8DDDB2B79B8C}</Project>
+      <Name>Qct.Infrastructure.Data.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Data\Qct.Infrastructure.Data.csproj">
+      <Project>{A6FB22DC-DEB0-4A1D-A614-8D38F7D1E2A7}</Project>
+      <Name>Qct.Infrastructure.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Export\Qct.Infrastructure.Export.csproj">
+      <Project>{2220B6D7-0BB6-441C-8E75-F1CF657CCA16}</Project>
+      <Name>Qct.Infrastructure.Export</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Log\Qct.Infrastructure.Log.csproj">
+      <Project>{789CD781-0994-4622-A1AE-2D2015045E5C}</Project>
+      <Name>Qct.Infrastructure.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure\Qct.Infrastructure.csproj">
+      <Project>{F71B0FBA-864B-49D8-ACEB-CCFE9D9E961E}</Project>
+      <Name>Qct.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.IRepository\Qct.IRepository.csproj">
+      <Project>{A8AA1AF2-5573-4EEC-A524-DB0AEF58A306}</Project>
+      <Name>Qct.IRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.ISevices\Qct.ISevices.csproj">
+      <Project>{142DE79F-2928-47E8-84FF-A028B4FFB209}</Project>
+      <Name>Qct.ISevices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Objects\Qct.Objects.csproj">
+      <Project>{9C68D23A-90DD-4544-A2AC-656B6B102455}</Project>
+      <Name>Qct.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Repository\Qct.Repository.csproj">
+      <Project>{39C66C08-99AE-46E9-BF4F-57E81B567EFA}</Project>
+      <Name>Qct.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

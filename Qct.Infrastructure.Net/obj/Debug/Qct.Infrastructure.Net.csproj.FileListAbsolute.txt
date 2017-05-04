@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Net.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Net.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Net\obj\Debug\Qct.Infrastructure.Net.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Net\obj\Debug\Qct.Infrastructure.Net.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Net\obj\Debug\Qct.Infrastructure.Net.csprojResolveAssemblyReference.cache

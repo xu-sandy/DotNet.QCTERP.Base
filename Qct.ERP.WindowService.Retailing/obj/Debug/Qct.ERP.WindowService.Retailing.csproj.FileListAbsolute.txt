@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\ERPWindowsService\Qct.ERP.WindowService.Retailing.exe.config
+E:\Workspace\QCT.ERP\Builds\ERPWindowsService\Qct.ERP.WindowService.Retailing.exe
+E:\Workspace\QCT.ERP\Builds\ERPWindowsService\Qct.ERP.WindowService.Retailing.pdb
+E:\Workspace\QCT.ERP\Qct.ERP.WindowService.Retailing\obj\Debug\Qct.ERP.WindowService.Retailing.exe
+E:\Workspace\QCT.ERP\Qct.ERP.WindowService.Retailing\obj\Debug\Qct.ERP.WindowService.Retailing.pdb
+E:\Workspace\QCT.ERP\Qct.ERP.WindowService.Retailing\obj\Debug\Qct.ERP.WindowService.Retailing.csprojResolveAssemblyReference.cache

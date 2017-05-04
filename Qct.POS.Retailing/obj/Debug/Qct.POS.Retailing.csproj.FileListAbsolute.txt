@@ -1,0 +1,14 @@
+E:\Workspace\QCT.ERP\Builds\POSClient\Qct.POS.Retailing.exe.config
+E:\Workspace\QCT.ERP\Builds\POSClient\Qct.POS.Retailing.exe
+E:\Workspace\QCT.ERP\Builds\POSClient\Qct.POS.Retailing.pdb
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\MainWindow.g.cs
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\App.g.cs
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing_MarkupCompile.cache
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing_MarkupCompile.lref
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\MainWindow.baml
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing.g.resources
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing.Properties.Resources.resources
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing.csproj.GenerateResource.Cache
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing.exe
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing.pdb
+E:\Workspace\QCT.ERP\Qct.POS.Retailing\obj\Debug\Qct.POS.Retailing.csprojResolveAssemblyReference.cache

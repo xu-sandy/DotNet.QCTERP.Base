@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Services.Pos.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Services.Pos.pdb
+E:\Workspace\QCT.ERP\Qct.Services.Pos\obj\Debug\Qct.Services.Pos.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Services.Pos\obj\Debug\Qct.Services.Pos.dll
+E:\Workspace\QCT.ERP\Qct.Services.Pos\obj\Debug\Qct.Services.Pos.pdb

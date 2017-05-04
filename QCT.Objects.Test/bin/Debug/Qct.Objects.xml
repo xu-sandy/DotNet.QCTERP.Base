@@ -1,0 +1,4654 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Qct.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:Qct.Objects.Entities.ProductBrand">
+            <summary>
+            用于管理本系统的产品档案所附属的品牌信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.ClassifyId">
+            <summary>
+            品牌分类ID（来自数据字典表）
+            [长度：10]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.BrandSN">
+            <summary>
+            品牌编号（全局唯一)
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.Title">
+            <summary>
+            品牌名称
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.JianPin">
+            <summary>
+            品牌简拼
+            [长度：20]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductBrand.State">
+            <summary>
+            状态（0:禁用、1:可用）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ProductCategory">
+            <summary>
+            商品分类
+            </summary>
+            <summary>
+            用于管理本系统的所有相关的附件基本信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.Parent">
+            <summary>
+            父分类
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.ProductCategory.GetProductCategoryPath">
+            <summary>
+            获取从顶级分类到指定分类的路径信息
+            </summary>
+            <param name="categorySN">指定分类编号</param>
+            <returns>从顶级分类到指定分类的路径信息</returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.ProductCategory.GetProductCategoryTitlePath">
+            <summary>
+            获取从顶级分类到指定分类的路径下的标题信息
+            </summary>
+            <param name="categorySN"></param>
+            <returns>从顶级分类到指定分类的路径下的标题信息</returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.ProductCategory.ToString">
+            <summary>
+            获取分类节点信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.CategorySN">
+            <summary>
+            分类编号（全局唯一）
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.CategoryPSN">
+            <summary>
+            上级分类SN
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.CategoryCode">
+            <summary>
+            分类代码 （最大 99，同一级分类下唯一）
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.Title">
+            <summary>
+            分类名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.OrderNum">
+            <summary>
+            顺序
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.State">
+            <summary>
+            状态（0:禁用、1:可用）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.TradePriceRate">
+            <summary>
+            批发价加价率
+            [长度：5]
+            [默认值：((150))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.SalePriceRate">
+            <summary>
+            销售价加价率
+            [长度：5]
+            [默认值：((150))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.JoinPriceRate">
+            <summary>
+            加盟价加价率
+            [长度：5]
+            [默认值：((150))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductCategory.InStoreSale">
+            <summary>
+            是否零售
+            [长度：1]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ProductChangePrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.Items">
+            <summary>
+            调价单项目列表
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.Id">
+            <summary>
+            
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.ChangePriceSN">
+            <summary>
+            变价主表编号
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.RangeType">
+            <summary>
+            调价范围（1-商品档案，2-商品档案及所有门店，3-指定门店）
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.StoreIds">
+            <summary>
+            相关门店Id
+            [长度：250]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.ValidDate">
+            <summary>
+            生效日期
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.Note">
+            <summary>
+            备注
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.CreateUID">
+            <summary>
+            
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.CreateDT">
+            <summary>
+            
+            [长度：23，小数位数：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.AuditorUID">
+            <summary>
+            
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePrice.AuditorDT">
+            <summary>
+            
+            [长度：23，小数位数：3]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ProductChangePriceItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.Id">
+            <summary>
+            
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.ChangePriceSN">
+            <summary>
+            
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.ProductCode">
+            <summary>
+            
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.OldBuyPrice">
+            <summary>
+            
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.NewBuyPrice">
+            <summary>
+            
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.OldSalePrice">
+            <summary>
+            
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductChangePriceItem.NewSalePrice">
+            <summary>
+            
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ProductGroupSplit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.Id">
+            <summary>
+            
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.ParentProductCode">
+            <summary>
+            父货号
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.Nature">
+            <summary>
+            1-折分，2-组合
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.CreateDT">
+            <summary>
+            
+            [长度：23，小数位数：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.CreateUID">
+            <summary>
+            
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplit.Note">
+            <summary>
+            
+            [长度：200]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ProductGroupSplitItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplitItem.Id">
+            <summary>
+            
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplitItem.GroupSplitId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplitItem.ChildProductCode">
+            <summary>
+            子货号
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductGroupSplitItem.Number">
+            <summary>
+            组合或拆分数量
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ProductRecord">
+            <summary>
+            用于管理本系统的所有产品档案基本信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Category">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.SubUnit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.ProductRecord.EqualsByBarcode(System.String)">
+            <summary>
+            通过条码判断商品是否为相同商品
+            </summary>
+            <param name="barcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.ProductRecord.EqualsByProductCode(System.String)">
+            <summary>
+            通过货号比较是否为本商品
+            </summary>
+            <param name="productCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.ProductRecord.IsWeightProduct">
+            <summary>
+            是否为称重商品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.ProductCode">
+            <summary>
+            货号 （自动 生成， 全局唯一） 
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Barcode">
+            <summary>
+            条形码（全局唯一）
+            [长度：30]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Title">
+            <summary>
+            品名
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Size">
+            <summary>
+            规格
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.BoxBoard">
+            <summary>
+            箱规
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.BrandSN">
+            <summary>
+            品牌SN
+            [长度：10]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.SupplierId">
+            <summary>
+            主供应商ID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.CityId">
+            <summary>
+            产地ID（来自城市ID）
+            [长度：10]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.CategorySN">
+            <summary>
+            品类SN（大类）
+            [长度：10]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.BigUnitId">
+            <summary>
+            计量大单位ID（来自数据字典表）
+            [长度：10]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.SubUnitId">
+            <summary>
+            计量小单位ID（来自数据字典表）
+            [长度：10]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.BuyPrice">
+            <summary>
+            进价
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.SysPrice">
+            <summary>
+            系统售价
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.TradePrice">
+            <summary>
+            批发价
+            [长度：19，小数位数：4]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.JoinPrice">
+            <summary>
+            加盟价
+            [长度：19，小数位数：4]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Nature">
+            <summary>
+            产品性质（0:单品、1:组合、2:拆分）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Favorable">
+            <summary>
+            前台优惠（1:允许调价、0:不允许调价)
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Expiry">
+            <summary>
+            保质期（0:不限）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.ExpiryUnit">
+            <summary>
+            保质期单位（1:天、2:月、3:年）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Factory">
+            <summary>
+            生产厂家
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.ValuationType">
+            <summary>
+            计价方式（1:计件、2:称重）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.IsReturnSale">
+            <summary>
+            退货标志（1:允许、0:不允许）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.IsAcceptOrder">
+            <summary>
+            订货标志（1:允许、0:不允许）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.RaterUID">
+            <summary>
+            物价员（UID）
+            [长度：40]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.InventoryWarning">
+            <summary>
+            库存预警（下限数量）
+            [长度：5]
+            [默认值：((5))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.ValidityWarning">
+            <summary>
+            保质期预警（天）
+            [长度：5]
+            [默认值：((5))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.State">
+            <summary>
+            产品状态（0:已下架、1:已上架）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.Barcodes">
+            <summary>
+            一品多码
+            [长度：150]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.StockRate">
+            <summary>
+            进项税率
+            [长度：19，小数位数：4]
+            [默认值：((17))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.SaleRate">
+            <summary>
+            销售税率
+            [长度：19，小数位数：4]
+            [默认值：((17))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.InventoryWarningMax">
+            <summary>
+            库存预警（上限数量）
+            [长度：5]
+            [默认值：((5))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.CreateDT">
+            <summary>
+            建档时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ProductRecord.IsRelationship">
+            <summary>
+            是否发生业务关系(0:否,1:是)
+            [长度：1]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysUserInfo">
+            <summary>
+            用于管理本系统的用户基本信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.UID">
+            <summary>
+            信息创建者ID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.UserCode">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.FullName">
+            <summary>
+            姓名
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.LoginName">
+            <summary>
+            登录账号
+            [长度：100]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.LoginPwd">
+            <summary>
+            登录密钥
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.Sex">
+            <summary>
+            性别（0:女、1:男）
+            [长度：1]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.BranchId">
+            <summary>
+            隶属机构ID
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.BumenId">
+            <summary>
+            隶属部门ID
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.BossUId">
+            <summary>
+            直属上司ID
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.PositionId">
+            <summary>
+            担任职位(来自数据字典)
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.PhotoUrl">
+            <summary>
+            头像URL
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.Status">
+            <summary>
+            状态（1:正常、2:锁定、3:注销）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.RoleIds">
+            <summary>
+            隶属角色组ID（多个间用,逗号间隔）
+            [长度：2000]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.LoginIP">
+            <summary>
+            最近登录IP
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.LoginDT">
+            <summary>
+            最近登录时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.LoginNum">
+            <summary>
+            登录次数（0:未登录过）
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.CreateUID">
+            <summary>
+            信息创建者 ID
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.Signature">
+            <summary>
+            个性签名
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.Handsign">
+            <summary>
+            手势密码
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.Mobile">
+            <summary>
+            手机号
+            [长度：20]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysUserInfo.HuanXinUUID">
+            <summary>
+            环信IM用户uuid
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.Id">
+            <summary>
+            记录 ID
+            [主键：√]
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.IndentOrderId">
+            <summary>
+            采购单ID(订货单ID)
+            [长度：40]
+            [不允许为空] 
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.StoreId">
+            <summary>
+            订货门店 ID
+            [长度：3]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.SupplierID">
+            <summary>
+            供货单位 ID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.RecipientsUID">
+            <summary>
+            收货人ID
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.OrderTotal">
+            <summary>
+            订单总额
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.ShippingAddress">
+            <summary>
+            收货地址
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.Phone">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.DeliveryDate">
+            <summary>
+            交货日期
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.PeiSongStartDate">
+            <summary>
+            配送开始日期
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.PeiSongEndDate">
+            <summary>
+            配送完成日期
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.ReceivedDT">
+            <summary>
+            已收货日期
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.CreateUID">
+            <summary>
+            创建人 UID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.ApproveDT">
+            <summary>
+            审批时间
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrder.State">
+            <summary>
+            状态（ -1:未提交、0:未审核、 1:已审核（ 未配送）、 2:配送中、 3:已中止、4:已配送、 5:已收货）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.IndentOrderList">
+            <summary>
+            采购明细单表
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.Id">
+            <summary>
+            明细 ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.IndentOrderId">
+            <summary>
+            采购单ID（订货单 ID）
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.ProductCode">
+            <summary>
+            商品条码
+            [长度：30]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.IndentNum">
+            <summary>
+            订货数量		
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.Price">
+            <summary>
+            进价
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.SysPrice">
+            <summary>
+            系统售价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.Subtotal">
+            <summary>
+            小计
+            [长度：19，小数位数：4]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.Memo">
+            <summary>
+            备注
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.DeliveryNum">
+            <summary>
+            配送数量
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.AcceptNum">
+            <summary>
+            收货数量
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.State">
+            <summary>
+            状态（1: 未配送、 2:配送中、 3:已中止、4:已配送、 5:已收货）
+            [长度：5]
+            [不允许为空]
+            [默认值：((2))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.Nature">
+            <summary>
+            产品性质(1-赠品)
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IndentOrderList.UnderProductCode">
+            <summary>
+            隶属赠品货号(赠品使用)
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ConsumptionPayment">
+            <summary>
+            消费支付方式用于管理本系统的所有商品销售结算方式信息（主表：SaleOrders）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.Id">
+            <summary>
+            记录 ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.PaySN">
+            <summary>
+            流水号
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.ApiCode">
+            <summary>
+            支付方式 ID
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.ApiOrderSN">
+            <summary>
+            交易单号（由支付宝或微信或银联返回）
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.Amount">
+            <summary>
+            实收金额
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.Memo">
+            <summary>
+            备注
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.State">
+            <summary>
+            支付状态（0：未支付、1：已支付）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.CardNo">
+            <summary>
+            卡号
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.Change">
+            <summary>
+            找零
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ConsumptionPayment.Received">
+            <summary>
+            客付金额
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SaleOrders">
+            <summary>
+            用于管理本系统的所有商品销售单信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.StoreId">
+            <summary>
+            门店ID
+            [长度：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.MachineSN">
+            <summary>
+            POS机号
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.PaySN">
+            <summary>
+            流水号（全局唯一）
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.CustomOrderSn">
+            <summary>
+            客户自定义流水号
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ReFundOrderCustomOrderSn">
+            <summary>
+            退单原单流水号
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ProductCount">
+            <summary>
+            
+            [长度：19，小数位数：4]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.TotalAmount">
+            <summary>
+            金额合计（优惠后)
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.OrderDiscount">
+            <summary>
+            手动整单折扣金额
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.PreferentialPrice">
+            <summary>
+            优惠合计
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ApiCode">
+            <summary>
+            支付方式ID（多个ID以,号间隔）没有支付为-1；
+            [长度：100]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.CreateDT">
+            <summary>
+            交易时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.CreateUID">
+            <summary>
+            收银员UID 
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ReturnDT">
+            <summary>
+            退单日期
+            [长度：23，小数位数：3]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.Salesman">
+            <summary>
+            导购员UID
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.Memo">
+            <summary>
+            备注
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.MemberId">
+            <summary>
+            会员ID
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.Type">
+            <summary>
+            账单类型(0：正常销售；1：换货；2：退货,3:退单) 默认值：0
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.State">
+            <summary>
+            状态（默认：0，0：正常，1：退整单）
+            [长度：10]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ReturnId">
+            <summary>
+            
+            [长度：4000]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ReturnOrderUID">
+            <summary>
+            
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.ActivityId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.Receive">
+            <summary>
+            抹零后收款金额
+            [长度：19，小数位数：4]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.IsTest">
+            <summary>
+            0:正常数据;1:练习模式数据
+            [长度：1]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.InInventory">
+            <summary>
+            订单库存状态（0：未处理，1、已处理销售单（包含销售、退货、换货新生成的订单）、2、已退单处理）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.IsProcess">
+            <summary>
+            记录是否已处理（0:未处理，1：已处理）
+            [长度：1]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleOrders.Reason">
+            <summary>
+            
+            [长度：10]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SaleDetail">
+            <summary>
+            用于管理本系统的所有商品销售明细信息（主表：SaleOrders）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.ProductCode">
+            <summary>
+            
+            [长度：20]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.ScanBarcode">
+            <summary>
+            扫入条码
+            [长度：30]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.PaySN">
+            <summary>
+            流水号
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.Barcode">
+            <summary>
+            商品条码
+            [长度：30]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.Title">
+            <summary>
+            品名
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.PurchaseNumber">
+            <summary>
+            购买数量
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.AveragePrice">
+            <summary>
+            
+            [长度：18，小数位数：8]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.BuyPrice">
+            <summary>
+            系统进价
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.SysPrice">
+            <summary>
+            系统售价
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.ActualPrice">
+            <summary>
+            交易价
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.Total">
+            <summary>
+            
+            [长度：19，小数位数：4]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.SalesClassifyId">
+            <summary>
+            销售分类ID（来自数据字典）
+            [长度：10]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SaleDetail.Memo">
+            <summary>
+            备注
+            [长度：200]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.WipeZero">
+            <summary>
+            摸零表
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.WipeZero.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.WipeZero.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.WipeZero.PaySN">
+            <summary>
+            支付编号
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.WipeZero.Number">
+            <summary>
+            优惠金额
+            [长度：19，小数位数：4]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.ApiLibrary">
+            <summary>
+            集成接口库用于管理本系统的所有集成外部接口信息（如：银联支付接口、扫码支付接口）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiType">
+            <summary>
+            接口类型（ 1:支付接口）
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.Title">
+            <summary>
+            接口名称
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiCode">
+            <summary>
+            接口代码（全局唯一）
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiUrl">
+            <summary>
+            接口地址
+            [长度：500]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiIcon">
+            <summary>
+            接口ICON
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiOrder">
+            <summary>
+            接口顺序
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.Memo">
+            <summary>
+            备注
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.State">
+            <summary>
+            状态（ 0:禁用、 1:可用）
+            [长度：5]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ReqMode">
+            <summary>
+            请求方式[1:post、2:get]
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiToken">
+            <summary>
+            Token
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiAccount">
+            <summary>
+            账号
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiPwd">
+            <summary>
+            密码
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ApiLibrary.ApiCloseIcon">
+            <summary>
+            关闭接口 ICON
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.Type">
+            <summary>
+            设备类型（1:大POS机、2:PAD、3:Mobile） 
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.DeviceSN">
+            <summary>
+            设备编码（全局唯一） 
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.MachineSN">
+            <summary>
+            POS机号（全局唯一）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.StoreId">
+            <summary>
+            门店ID（全局唯一）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.CreateDT">
+            <summary>
+            注册时间 
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.State">
+            <summary>
+            状态（0:禁用、1:可用）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.AuditorUID">
+            <summary>
+            审核人UID 
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.Memo">
+            <summary>
+            备注
+            [长度：200]
+            [允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Systems.DeviceRegInfo.SecurityCode">
+            <summary>
+            门店设备授权码
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ImportSet.CompanyId">
+            <summary>
+            企业ID
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ImportSet.TableName">
+            <summary>
+            导入表名
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ImportSet.FieldJson">
+            <summary>
+            字段名称和对应Excel列列
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ImportSet.MinRow">
+            <summary>
+            起始行数
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ImportSet.MaxRow">
+            <summary>
+            最大行数
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ImportSet.RefCreate">
+            <summary>
+            相关联不存在是否创建新记录，0－不创建，1－创建
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.Notice">
+            <summary>
+            公告用于管理本系统的公告信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.Id">
+            <summary>
+            活动ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.Theme">
+            <summary>
+            公告主题
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.NoticeContent">
+            <summary>
+            公告内容
+            [长度：1000]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.Type">
+            <summary>
+            公告类型（1-公告；2-活动）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.State">
+            <summary>
+            公告状态（ 0:未发布 1:已发布）
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.CreateUID">
+            <summary>
+            创建人UID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.StoreId">
+            <summary>
+            公告范围（门店ID或供应商ID，多个以逗号间隔）（0:后台系统）
+            [长度：4000]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.ExpirationDate">
+            <summary>
+            截止日期（Date）
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.BeginDate">
+            <summary>
+            开始日期（Date）
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Notice.Url">
+            <summary>
+            主题图片 Url
+            [长度：200]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysLog">
+            <summary>
+            系统日志
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteInsert(System.String,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入新增日志
+            </summary>
+            <param name="msg">自定义信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteUpdate(System.String,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入修改日志
+            </summary>
+            <param name="msg">自定义信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteDelete(System.String,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入删除日志
+            </summary>
+            <param name="msg">自定义信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteLogin(System.String,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入登录日志
+            </summary>
+            <param name="msg">自定义信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteLogout(System.String,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入退出日志
+            </summary>
+            <param name="msg">自定义信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteError(System.Exception,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入异常日志
+            </summary>
+            <param name="ex">Exception 异常信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.SysLog.WriteError(System.String,System.Exception,Qct.Objects.ValueObjects.LogModule)">
+            <summary>
+            写入自定义信息的异常日志
+            </summary>
+            <param name="msg">自定义信息（优先级）</param>
+            <param name="ex">Exception 异常信息</param>
+            <param name="module">LogModule 日志模块</param>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.CompanyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.Type">
+            <summary>
+            类型（1:登录、2:退出、3:普通信息（增删改）、4:异常、5：调试、6:其他）
+            [长度：3]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.UId">
+            <summary>
+            用户ID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.Summary">
+            <summary>
+            描述
+            [长度：-1]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.ClientIP">
+            <summary>
+            客户端IP
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.ServerName">
+            <summary>
+            服务器名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.CreateDT">
+            <summary>
+            记录时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLog.ModuleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysRoles">
+            <summary>
+            用于管理本系统的权限组信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.RoleId">
+            <summary>
+            角色组 ID（全局唯
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.Title">
+            <summary>
+            组名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.LimitsIds">
+            <summary>
+            权限 ID （多个间用,号间隔， -1:不限）
+            [长度：4000]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.Memo">
+            <summary>
+            描述说明
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.Status">
+            <summary>
+            状态（0:关闭、1:可用）
+            [长度：1]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysRoles.ShowView">
+            <summary>
+            允许显示到页面 （0: 否、1: 是）
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysCustomMenus">
+            <summary>
+            用于管理本系统的部门或用户自定义菜单配置信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysCustomMenus.Id">
+            <summary>
+            记录 ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysCustomMenus.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysCustomMenus.Type">
+            <summary>
+            适用类型（-1:全部,1:部门,2:角色,3:用户）
+            [长度：10]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysCustomMenus.ObjId">
+            <summary>
+            适用对象ID（-1:全部,部门ID、角色ID、用户ID）
+            [长度：10]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysCustomMenus.MenuIds">
+            <summary>
+            拥有菜单项（多个间用,号间隔，-1:继承所在部门）（来自SysMenus表Id）
+            [长度：-1]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysCustomMenus.SortOrder">
+            <summary>
+            排序
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysDepartments">
+            <summary>
+            用于管理本系统的分机构、部门信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.Id">
+            <summary>
+            机构部门ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.CompanyId">
+            <summary>
+            企业标识
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.Type">
+            <summary>
+            类型（1:机构、2:部门、3:子部门）
+            [长度：5]
+            [不允许为空]
+            [默认值：((2))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.DepId">
+            <summary>
+            机构部门Id(全局唯一)
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.PDepId">
+            <summary>
+            隶属分机构ID（0:顶级）
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.SortOrder">
+            <summary>
+            排序（0:无）
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.Title">
+            <summary>
+            部门名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.SN">
+            <summary>
+            部门代码
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.ManagerUId">
+            <summary>
+            部门领导ID（-1:未知）
+            [长度：40]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.DeputyUId">
+            <summary>
+            部门副领导ID（-1:未知）
+            [长度：40]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.IndexPageUrl">
+            <summary>
+            登录后首页
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDepartments.Status">
+            <summary>
+            状态（0:关闭、1:显示）
+            [长度：1]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysDataDictionary">
+            <summary>
+            用于管理本系统的所有业务数据字典信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.DicSN">
+            <summary>
+            编号（该编号全局唯一）
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.DicPSN">
+            <summary>
+            父编号ID（0：顶级）
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.SortOrder">
+            <summary>
+            排序（0:无）
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.Title">
+            <summary>
+            类别名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysDataDictionary.Status">
+            <summary>
+            状态（0:关闭、1:可用）
+            [长度：1]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysLimits">
+            <summary>
+            用于管理本系统的全局权限Code信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.Id">
+            <summary>
+            记录 ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.Title">
+            <summary>
+            权限名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.LimitId">
+            <summary>
+            权限 ID （全局唯一）
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.PLimitId">
+            <summary>
+            隶属权限 ID（ 0:顶级）
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.Depth">
+            <summary>
+            深度（1-9）
+            [长度：5]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.SortOrder">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysLimits.Status">
+            <summary>
+            状态（0:关闭/停用、1:显示/默认选中、2:可选）
+            [长度：5]
+            [不允许为空]
+            [默认值：((2))]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.SysMenus">
+            <summary>
+            用于管理本系统的菜单基本信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.CompanyId">
+            <summary>
+            
+            [长度：10]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.MenuId">
+            <summary>
+            菜单 Id （全局唯一）
+            [长度：10]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.PMenuId">
+            <summary>
+            上级菜单（ 0:顶级）
+            [长度：10]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.SortOrder">
+            <summary>
+            排序
+            [长度：10]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.Title">
+            <summary>
+            名称
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.URL">
+            <summary>
+            URL
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.Type">
+            <summary>
+            类型 0-总部，1-门店
+            [长度：5]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysMenus.Status">
+            <summary>
+            状态（0:隐藏、1:显示）
+            [长度：1]
+            [不允许为空]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.LogoDispWay">
+            <summary>
+            logo展现方式
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.LoginLogo">
+            <summary>
+            登陆Logo
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.TopLogo">
+            <summary>
+            顶部Logo
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.BottomLogo">
+            <summary>
+            底部Logo
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppIcon640">
+            <summary>
+            App640图标
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppIcon960">
+            <summary>
+            App960图标
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppIndexIcon640">
+            <summary>
+            APP首页logo
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppIndexIcon960">
+            <summary>
+            APP首页logo
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppIndexbg640">
+            <summary>
+            App首页背景图
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppIndexbg960">
+            <summary>
+            App首页背景图
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppCustomer640">
+            <summary>
+            App首页文字
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.AppCustomer960">
+            <summary>
+            App首页文字
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SysIcon">
+            <summary>
+            系统Icon
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SysName">
+            <summary>
+            系统名称
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.WebsiteUrl">
+            <summary>
+            官网地址
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.CompanyTitle">
+            <summary>
+            公司简称
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.CompanyFullTitle">
+            <summary>
+            公司全称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.Tel">
+            <summary>
+            公司电话
+            [长度：20]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.PageTitle">
+            <summary>
+            页面Title
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SMTPServer">
+            <summary>
+            SMTP发件箱服务器
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SMTPPort">
+            <summary>
+            SMTP端口
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SMTPShowName">
+            <summary>
+            SMTP显示名称
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SMTPSSLPort">
+            <summary>
+            SMTP SSL端口
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SMTPAccount">
+            <summary>
+            SMTP账号
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.SMTPPwd">
+            <summary>
+            SMTP密码
+            [长度：50]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.EMReqUrlBase">
+            <summary>
+            APP在环信上注册的对应应用URL
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.EMAppId">
+            <summary>
+            APP在环信上注册的对应应用Id
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.EMAppSecret">
+            <summary>
+            APP在环信上注册的对应应用Secret
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.EMAppOrg">
+            <summary>
+            APP在环信上对应的appkey的org_name部分
+            [长度：200]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysWebSetting.EMAppName">
+            <summary>
+            APP在环信上对应的appkey的app_name部分
+            [长度：200]
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.Warehouse">
+            <summary>
+            仓库信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.StoreId">
+            <summary>
+            仓库（门店）编号（全局唯一）
+            [长度：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.Title">
+            <summary>
+            仓库名称
+            [长度：20]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.CategorySN">
+            <summary>
+            存储品类ID（多个ID以,号间隔）
+            [长度：500]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.State">
+            <summary>
+            状态（0:停用、1:可用）
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.CreateUID">
+            <summary>
+            创建人UID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Warehouse.AdminState">
+            <summary>
+            后台管理开放
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.IncreasingNumber">
+            <summary>
+            自增数
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IncreasingNumber.Id">
+            <summary>
+            自增数标识
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IncreasingNumber.Number">
+            <summary>
+            自增数值记录
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrder.CustomerId">
+            <summary>
+            会员ID(未设置表示普通购物者)
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrder.Cashier">
+            <summary>
+            收银员
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrder.Guider">
+            <summary>
+            导购员
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrder.MarketingOrderItems">
+            <summary>
+            促销商品范围
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrderItem.Product">
+            <summary>
+            商品信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrderItem.Number">
+            <summary>
+            购买数量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrderItem.ManualPrice">
+            <summary>
+            销售手动改价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrderItem.MarketingPrice">
+            <summary>
+            后台促销价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrderItem.SaleState">
+            <summary>
+            商品销售状态
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.IOrderItem.EditedPrice">
+            <summary>
+            是否已被手动改价
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.Order">
+            <summary>
+            订单
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.Order.#ctor(Qct.Objects.Entities.Shoppingcart,System.Collections.Generic.IEnumerable{Qct.Marketings.IOrderMarketingResult})">
+            <summary>
+            初始订单
+            </summary>
+            <param name="shoppingcart"></param>
+            <param name="marketingContexts"></param>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.OrderId">
+            <summary>
+            订单Id(即流水号)
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.CustomerId">
+            <summary>
+            会员ID(未设置表示普通购物者)
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.CreateDate">
+            <summary>
+            订单创建时间
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.Items">
+            <summary>
+            订单项
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.MarketingOrderItems">
+            <summary>
+            订单项目（用于促销运算遍历）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.OrderState">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.Cashier">
+            <summary>
+            收银员
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.Guider">
+            <summary>
+            导购员
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Order.OrderPays">
+            <summary>
+            订单支付明细
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.Order.SetOrderPayComplete(System.Collections.Generic.IEnumerable{Qct.Objects.Entities.OrderPay})">
+            <summary>
+            设置支付完成
+            </summary>
+            <param name="orderPays"></param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Order.SetOrderComplete">
+            <summary>
+            设置订单完成
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.Order.GetProductCount">
+            <summary>
+            获取商品件数，称重商品一称算一件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.Order.GetTotal">
+            <summary>
+            获取购物车总计金额
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.Order.GetDiscount">
+            <summary>
+            获取购物车已优惠金额【只记优惠部分，不计多收部分】
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderItem.Product">
+            <summary>
+            商品信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderItem.Number">
+            <summary>
+            购买数量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderItem.ManualPrice">
+            <summary>
+            销售手动改价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderItem.MarketingPrice">
+            <summary>
+            后台促销价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderItem.SaleState">
+            <summary>
+            商品销售状态
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderItem.EditedPrice">
+            <summary>
+            是否已经被手动改价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.PayType">
+            <summary>
+            支付类型
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.PayOrderSn">
+            <summary>
+            支付订单号
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.PaymentPlatformSn">
+            <summary>
+            支付平台支付流水号
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.PayAmount">
+            <summary>
+            支付金额
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.ReceivedAmount">
+            <summary>
+            收到金额（ReceivedAmount可能大于PayAmount）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.OrderPay.ChangedAmount">
+            <summary>
+            找零
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.Entities.Shoppingcart">
+            <summary>
+            购物车
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.CustomerId">
+            <summary>
+            会员ID(未设置表示普通购物者)
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.ShoppingcartId">
+            <summary>
+            购物车编号
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.CreateDate">
+            <summary>
+            创建购物车的时间
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.Items">
+            <summary>
+            购物车商品列表
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.MarketingOrderItems">
+            <summary>
+            购物车商品列表（用于促销运算遍历）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.Cashier">
+            <summary>
+            收银员
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.Guider">
+            <summary>
+            导购员
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.Shoppingcart.IsSuspended">
+            <summary>
+            购物车是否被挂起
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.AddItem(Qct.Objects.Entities.ProductRecord,System.Boolean,System.Decimal)">
+            <summary>
+            新增一项商品
+            </summary>
+            <param name="product"></param>
+            <param name="saleState"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.RemoveItem(System.Guid)">
+            <summary>
+            移出一项商品
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.EditItem(System.Guid,System.Decimal,System.Decimal)">
+            <summary>
+            修改一项商品的数量或者价格
+            </summary>
+            <param name="id"></param>
+            <param name="price"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.EditProductNumber(Qct.Objects.Entities.ShoppingcartItem,System.Decimal)">
+            <summary>
+            修改商品数量
+            </summary>
+            <param name="item"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.EditPrice(Qct.Objects.Entities.ShoppingcartItem,System.Decimal)">
+            <summary>
+            修改商品价格
+            </summary>
+            <param name="item"></param>
+            <param name="price"></param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.FindSameOne(System.String,System.Boolean)">
+            <summary>
+            购物车项目合并查询(货号相同、不是称重商品、未被改价（包含赠品）)
+            </summary>
+            <param name="productCode">货号</param>
+            <param name="isGift">是否为赠品</param>
+            <returns>返回购物车项目</returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.SetCustomer(System.String)">
+            <summary>
+            设置客户
+            </summary>
+            <param name="customerId">客户编号（即会员唯一标识）</param>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.ResetCustomer">
+            <summary>
+            重置客户
+            </summary>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.SubmitOrder(System.Collections.Generic.IEnumerable{Qct.Marketings.IOrderMarketingResult})">
+            <summary>
+            提交订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.GetProductCount">
+            <summary>
+            获取商品件数，称重商品一称算一件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.GetTotal">
+            <summary>
+            获取购物车总计金额
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Objects.Entities.Shoppingcart.GetDiscount">
+            <summary>
+            获取购物车已优惠金额【只记优惠部分，不计多收部分】
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qct.Objects.Entities.ShoppingcartItem">
+            <summary>
+            购物车明细
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.Id">
+            <summary>
+            用于删除、修改购物车的编辑Id
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.Product">
+            <summary>
+            商品信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.Number">
+            <summary>
+            购买数量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.ManualPrice">
+            <summary>
+            销售改价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.MarketingPrice">
+            <summary>
+            后台促销价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.SaleState">
+            <summary>
+            商品销售状态
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.EditedPrice">
+            <summary>
+            是否已被手动改价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.EnableEditNum">
+            <summary>
+            是否允许改数量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.ShoppingcartItem.EnableEditPrice">
+            <summary>
+            是否允许改价格
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayConfiguration.CompanyId">
+            <summary>
+            公司ID
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayConfiguration.SecurityKey">
+            <summary>
+            第三方支付平台提供的支付安全密钥
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayConfiguration.PaymentMerchantNumber">
+            <summary>
+            第三方支付商户号
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayConfiguration.PayType">
+            <summary>
+            支付类型
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayConfiguration.State">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayConfiguration.Description">
+            <summary>
+            向客户显示的支付描述（如沃尔玛购物）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayWay.PayType">
+            <summary>
+            支付类型（对应原v3版本的apicode）
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayWay.Title">
+            <summary>
+            支付名称或者标题
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayWay.EnableIcon">
+            <summary>
+            可用图标
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayWay.DisableIcon">
+            <summary>
+            不可用图标
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayWay.SortNumber">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.PayWay.PayMode">
+            <summary>
+            支付模式【台账、后台对接支付接口、收银端对接支付接口】
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.StorePaymentAuthorization.CompanyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.StorePaymentAuthorization.StoreId">
+            <summary>
+            门店Id
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.StorePaymentAuthorization.MapPaymentStoreId">
+            <summary>
+            支付平台开通门店映射
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.StorePaymentAuthorization.PayType">
+            <summary>
+            支付类型
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.StorePaymentAuthorization.State">
+            <summary>
+            是否已经授权
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.Id">
+            <summary>
+            记录ID
+            [主键：√]
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.CompanyId">
+            <summary>
+            公司ID
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.UID">
+            <summary>
+            用户ID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.FullName">
+            <summary>
+            姓名
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.UserCode">
+            <summary>
+            员工编号
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.LoginName">
+            <summary>
+            员工编号
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.LoginPwd">
+            <summary>
+            登录密钥
+            [长度：50]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.Sex">
+            <summary>
+            性别（0:女、1:男）
+            [长度：1]
+            [默认值：((1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.OperateAuth">
+            <summary>
+            本店角色（1:店长、2:营业员、3:收银员、4:数据维护），格式：门店ID,角色ID|门店ID,角色ID
+            [长度：2000]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.Status">
+            <summary>
+            状态（1:正常、2:锁定、3:注销）
+            [长度：5]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.LoginDT">
+            <summary>
+            最近登录时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.SyncItemVersion">
+            <summary>
+            数据版本
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.Entities.SysStoreUserInfo.SyncItemId">
+            <summary>
+            同步ID
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.ExpiryUnit">
+            <summary>
+            保质期单位
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ExpiryUnit.Day">
+            <summary>
+            天
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ExpiryUnit.Month">
+            <summary>
+            月
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ExpiryUnit.Year">
+            <summary>
+            年
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.MeteringMode">
+            <summary>
+            称重模式
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.MeteringMode.Weight">
+            <summary>
+            称重
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.MeteringMode.PieceOrCount">
+            <summary>
+            计件或计次
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.ProductState">
+            <summary>
+            商品状态
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ProductState.OutTheShelf">
+            <summary>
+            已下架
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ProductState.InTheShelf">
+            <summary>
+            已上架
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.Inventory.InventoryResult">
+            <summary>
+            查库存结果
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Barcode">
+            <summary>
+            条码
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Title">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Size">
+            <summary>
+            规格
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Category">
+            <summary>
+            产品分类
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Price">
+            <summary>
+            系统售价
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.Inventory">
+            <summary>
+            库存量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.Inventory.InventoryResult.ProductCode">
+            <summary>
+            货号
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.ProductType">
+            <summary>
+            商品类型
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ProductType.Normal">
+            <summary>
+            正常商品
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ProductType.Combination">
+            <summary>
+            组合商品
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.ProductType.Split">
+            <summary>
+            拆分商品
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.OrderTitle">
+            <summary>
+            订货人
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.RecipientsTitle">
+            <summary>
+            收货人
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.CreateTitle">
+            <summary>
+            下单人
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.IndentNums">
+            <summary>
+            订货量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.DeliveryNums">
+            <summary>
+            出售量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.AcceptNums">
+            <summary>
+            收货量
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.DistributionBatch">
+            <summary>
+            配送批次
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.IndentOrderModel.OrderGiftnum">
+            <summary>
+            订单数/赠品数
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.ActivityNoticeModel.Type">
+            <summary>
+            类型（1：活动，2：公告）
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.Systems.DeviceState">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.Systems.DeviceState.Disable">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.Systems.DeviceState.Enable">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.Systems.DeviceType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.Systems.DeviceType.PC">
+            <summary>
+            PC或者大POS机
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.Systems.DeviceType.Pad">
+            <summary>
+            平板
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.Systems.DeviceType.Moblie">
+            <summary>
+            手机
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.LogModule">
+            <summary>
+            日志模块
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.登录">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.退出">
+            <summary>
+            退出
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.异常">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.新增">
+            <summary>
+            新增
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.修改">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.删除">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.调试">
+            <summary>
+            调试
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.演练">
+            <summary>
+            演练
+            </summary>
+        </member>
+        <member name="F:Qct.Objects.ValueObjects.LogType.其他">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.StoreInformation">
+            <summary>
+            门店信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.StoreInformation.CompanyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.StoreInformation.StoreId">
+            <summary>
+            门店Id
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.StoreInformation.StoreName">
+            <summary>
+            门店名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.StoreInformation.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.StoreInformation.CompanyShorterName">
+            <summary>
+            公司简称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.StoreInformation.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDictionaryModel.ItemsStr">
+            <summary>
+            显示的子项字符串
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDictionaryModel.ItemsCount">
+            <summary>
+            所有子项树
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDictionaryModel.PTitle">
+            <summary>
+            父级字典名称
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.SysDepartmentsModel">
+            <summary>
+            组织结构实体扩展Model
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.ChildsNum">
+            <summary>
+            子成员数
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.PTitle">
+            <summary>
+            父级部门名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.PType">
+            <summary>
+            父级类型
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.ManagerUName">
+            <summary>
+            部门领导名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.DeputyUName">
+            <summary>
+            部门副领导名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.TypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysDepartmentsModel.Childs">
+            <summary>
+            子级权限集合
+            </summary>
+        </member>
+        <member name="T:Qct.Objects.ValueObjects.SysMenusModel">
+            <summary>
+            菜单信息
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysMenusModel.PTitle">
+            <summary>
+            父级菜单名称
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.SysMenusModel.Childs">
+            <summary>
+            子级菜单集合
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.UserLoginModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Qct.Objects.ValueObjects.UserLoginModel.UserPwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Qct.ElectronicBalance.ElectronicBalanceWorkPattern">
+            <summary>
+            电子称工作模式【条码生成模式】
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_ProductCode_Weight_CheckCode">
+            <summary>
+            13位称重条码（标识符+货号+重量+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_ProductCode_Weight">
+            <summary>
+            13位称重条码（标识符+货号+重量）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_Barcode_Weight_CheckCode">
+            <summary>
+            13位称重条码（标识符+条码+重量+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_Barcode_Weight">
+            <summary>
+            13位称重条码（标识符+条码+重量+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_ProductCode_Amount_CheckCode">
+            <summary>
+            13位称重条码（标识符+货号+金额+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_ProductCode_Amount">
+            <summary>
+            13位称重条码（标识符+货号+金额）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_Barcode_Amount_CheckCode">
+            <summary>
+            13位称重条码（标识符+条码+金额+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length13_FlagCode_Barcode_Amount">
+            <summary>
+            13位称重条码（标识符+条码+金额）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_ProductCode_Weight_Amount_CheckCode">
+            <summary>
+            18位称重条码（标识符+货号+重量+金额+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_ProductCode_Weight_Amount">
+            <summary>
+            18位称重条码（标识符+货号+重量+金额）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_Barcode_Weight_Amount_CheckCode">
+            <summary>
+            18位称重条码（标识符+条码+重量+金额+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_Barcode_Weight_Amount">
+            <summary>
+            18位称重条码（标识符+条码+重量+金额）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_ProductCode_Amount_Weight_CheckCode">
+            <summary>
+            18位称重条码（标识符+货号+金额+重量+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_ProductCode_Amount_Weight">
+            <summary>
+            18位称重条码（标识符+货号+金额+重量）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_Barcode_Amount_Weight_CheckCode">
+            <summary>
+            18位称重条码（标识符+条码+金额+重量+校验码）
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.ElectronicBalanceWorkPattern.Length18_FlagCode_Barcode_Amount_Weight">
+            <summary>
+            18位称重条码（标识符+条码+金额+重量）
+            </summary>
+        </member>
+        <member name="T:Qct.ElectronicBalance.ElectronicBalanceWorkPatternExtension">
+            <summary>
+            电子秤工作模式
+            </summary>
+        </member>
+        <member name="M:Qct.ElectronicBalance.ElectronicBalanceWorkPatternExtension.GetLength(Qct.ElectronicBalance.ElectronicBalanceWorkPattern)">
+            <summary>
+            已知类型返回对应的条码长度，否则返回0
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qct.ElectronicBalance.PatternSettingItem">
+            <summary>
+            电子称工作模式下设置参数枚举
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.Length">
+            <summary>
+            条码长度
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.FlagCode">
+            <summary>
+            前缀标识
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.ProductCodeLength">
+            <summary>
+            货号长度
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.BarcodeLength">
+            <summary>
+            条码长度
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.WeightPrecision">
+            <summary>
+            重量精度
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.WeightLength">
+            <summary>
+            重量
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.AmountPrecision">
+            <summary>
+            金额精度
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.AmountLength">
+            <summary>
+            金额长度
+            </summary>
+        </member>
+        <member name="F:Qct.ElectronicBalance.PatternSettingItem.CheckCode">
+            <summary>
+            校验码
+            </summary>
+        </member>
+        <member name="M:Qct.OrderItemExtensions.IsGift(Qct.Objects.Entities.IOrderItem)">
+            <summary>
+            是否为手动录入赠品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderItemExtensions.HasMarketingPrice(Qct.Objects.Entities.IOrderItem)">
+            <summary>
+            获取商品是否拥有后台促销价，改价商品不参与后台促销
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderItemExtensions.Subtotal(Qct.Objects.Entities.IOrderItem)">
+            <summary>
+            获取商品小计
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderItemExtensions.ItemDiscount(Qct.Objects.Entities.IOrderItem)">
+            <summary>
+            获取商品优惠小计
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderItemExtensions.GetItemPrice(Qct.Objects.Entities.IOrderItem)">
+            <summary>
+            获取销售价
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Qct.Marketings.Gift.Product">
+            <summary>
+            商品信息
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.Gift.Number">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.IMarketingContext.MarketingRule">
+            <summary>
+            促销规则
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.IOrderMarketingResult.MarketingContext">
+            <summary>
+            订单促销上下文
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.IOrderMarketingResult.MarketingRuleDescription">
+            <summary>
+            促销结果描述信息
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.IOrderMarketingResult.ReducedCash">
+            <summary>
+            根据促销结果获取减现金额，如未减现则返回0
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.IOrderMarketingResult.GiftOptions">
+            <summary>
+            赠品方案选项
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.IOrderMarketingResult.TradeInOptions">
+            <summary>
+            换购方案选项
+            </summary>
+        </member>
+        <member name="M:Qct.Marketings.IOrderMarketingResult.SaveResult(Qct.Infrastructure.Data.IEntityFrameworkUnitOfWork,Qct.Objects.Entities.Order)">
+            <summary>
+            将结果保存到数据库
+            </summary>
+            <param name="unitOfWork"></param>
+            <param name="order"></param>
+        </member>
+        <member name="M:Qct.Marketings.IOrderMarketingResult.GetGiftsOrTradeInItems">
+            <summary>
+            根据赠品、换购结果生成订单项目，当无新订单项目生成时，返回null;
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qct.Marketings.OrderMarketingContext">
+            <summary>
+            促销动作记录
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.OrderMarketingContext.EffectiveRanges">
+            <summary>
+            影响范围
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.OrderMarketingContext.MarketingRule">
+            <summary>
+            促销规则
+            </summary>
+        </member>
+        <member name="T:Qct.Marketings.OrderMarketingStage">
+            <summary>
+            促销阶段
+            </summary>
+        </member>
+        <member name="F:Qct.Marketings.OrderMarketingStage.AddProductInShoppingcart">
+            <summary>
+            购物车促销阶段
+            </summary>
+        </member>
+        <member name="F:Qct.Marketings.OrderMarketingStage.BeforeCommitOrder">
+            <summary>
+            订单提交之前促销阶段
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.TradeInItem.Product">
+            <summary>
+            商品信息
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.TradeInItem.Number">
+            <summary>
+            购买数量
+            </summary>
+        </member>
+        <member name="P:Qct.Marketings.TradeInItem.Amount">
+            <summary>
+            特价金额
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.StoreId">
+            <summary>
+            门店ID
+            [长度：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.MemberNo">
+            <summary>
+            会员编号
+            [长度：100]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.RealName">
+            <summary>
+            会员姓名
+            [长度：20]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Sex">
+            <summary>
+            性别（ -1: 未知、 0:女、 1: 男）
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Weixin">
+            <summary>
+            微信号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Zhifubao">
+            <summary>
+            支付宝
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.MobilePhone">
+            <summary>
+            手机号（全局唯一）
+            [长度：11]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Email">
+            <summary>
+            Email（全局唯一）
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.QQ">
+            <summary>
+            QQ
+            [长度：100]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Birthday">
+            <summary>
+            生日（yyyy-MM-dd）
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.MemberLevelId">
+            <summary>
+            会员等级
+            [长度：10]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.MemberGroupId">
+            <summary>
+            会员分组
+            [长度：10]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.CurrentProvinceId">
+            <summary>
+            所在省份ID
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.CurrentCityId">
+            <summary>
+            所在城市ID
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.CurrentCountyId">
+            <summary>
+            所在区县ID
+            [长度：10]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Address">
+            <summary>
+            联系地址
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.IDNumber">
+            <summary>
+            IDNumber
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Insider">
+            <summary>
+            内部人员
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.DefaultPreferentialId">
+            <summary>
+            默认优惠方式
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.DefaultIntegrationId">
+            <summary>
+            默认积分方式
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.CreateUID">
+            <summary>
+            创建人UID
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.Status">
+            <summary>
+            状态（ 0: 禁用、 1:可用、 2: 无效）
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.ReferrerUID">
+            <summary>
+            推荐人
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.Members.UsableIntegral">
+            <summary>
+            可用积分
+            [长度：10]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.CompanyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.BatchSN">
+            <summary>
+            制卡批次 
+            [长度：40]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.CardSN">
+            <summary>
+            卡号 
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.CardTypeId">
+            <summary>
+            卡片类型 GUID 
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Qct.Domain.Objects.MembershipCard.MemberId" -->
+        <member name="P:Qct.Domain.Objects.MembershipCard.ReChargeTotal">
+            <summary>
+            累计充值
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.GiveTotal">
+            <summary>
+            累计赠送金额 
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.Balance">
+            <summary>
+            可用余额 
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.Deposit">
+            <summary>
+            押金 
+            [长度：19，小数位数：4]
+            [不允许为空]
+            [默认值：((0))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.State">
+            <summary>
+            使用状态(0:未激活；1：正常；2 已挂失；3：已作废；4 已退卡) 
+            [长度：10]
+            [不允许为空]
+            [默认值：((-1))]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.ExpiryStart">
+            <summary>
+            有效期-起始 
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.ExpiryEnd">
+            <summary>
+            有效期-截止
+            [长度：10]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.CreateDT">
+            <summary>
+            创建时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.CreateUID">
+            <summary>
+            创建人
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.LeadTime">
+            <summary>
+            领用时间
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.SecurityCode">
+            <summary>
+            防伪码
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.ExportDT">
+            <summary>
+            导出时间
+            [长度：23，小数位数：3]
+            [不允许为空]
+            [默认值：(getdate())]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.ExportUID">
+            <summary>
+            导出人
+            [长度：40]
+            [不允许为空]
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.Objects.MembershipCard.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="M:Qct.Domain.Objects.Models.StoreUserRole.GetStoreUserRoles(System.String)">
+            <summary>
+            获取系统配置的用户门店授权信息
+            </summary>
+            <param name="storeId">请求门店</param>
+            <returns>该门店下用户的授权列表</returns>
+        </member>
+        <member name="T:Qct.Domain.CommonObject.User.CashierCredentials">
+            <summary>
+            收银员身份凭证
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.CashierCredentials.Token">
+            <summary>
+            登录凭证号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.CashierCredentials.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.CashierCredentials.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="T:Qct.Domain.CommonObject.User.LoginAction">
+            <summary>
+            登录参数
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.MachineSn">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.DeviceSn">
+            <summary>
+            设备硬件标识
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.StoreId">
+            <summary>
+            门店编号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.CompanyId">
+            <summary>
+            公司编号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.Practice">
+            <summary>
+            是否为练习模式
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.LoginAction.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Qct.Domain.CommonObject.User.StoreManagerAuthorization">
+            <summary>
+            店长授权
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.StoreManagerAuthorization.Token">
+            <summary>
+            当前收银员凭证
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.StoreManagerAuthorization.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Qct.Domain.CommonObject.User.StoreUserEntrance">
+            <summary>
+            用户入口
+            </summary>
+        </member>
+        <member name="F:Qct.Domain.CommonObject.User.StoreUserEntrance.POS">
+            <summary>
+            从收银软件登陆
+            </summary>
+        </member>
+        <member name="F:Qct.Domain.CommonObject.User.StoreUserEntrance.StoreManageSite">
+            <summary>
+            从门店后台登陆
+            </summary>
+        </member>
+        <member name="T:Qct.Domain.CommonObject.User.StoreUserRoleType">
+            <summary>
+            门店用户权限
+            </summary>
+        </member>
+        <member name="F:Qct.Domain.CommonObject.User.StoreUserRoleType.ShopManager">
+            <summary>
+            店长
+            </summary>
+        </member>
+        <member name="F:Qct.Domain.CommonObject.User.StoreUserRoleType.ShoppingGuide">
+            <summary>
+            营业员/导购员
+            </summary>
+        </member>
+        <member name="F:Qct.Domain.CommonObject.User.StoreUserRoleType.Cashier">
+            <summary>
+            收银员
+            </summary>
+        </member>
+        <member name="F:Qct.Domain.CommonObject.User.StoreUserRoleType.DataManager">
+            <summary>
+            数据维护员
+            </summary>
+        </member>
+        <member name="T:Qct.Domain.CommonObject.User.UserCredentials">
+            <summary>
+            用户登录凭证
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.IsLogin">
+            <summary>
+            是否已登录
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.IsPracticed">
+            <summary>
+            是否为练习登录
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.CompanyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.StoreId">
+            <summary>
+            门店Id
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.MachineSn">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.DeviceSn">
+            <summary>
+            设备唯一标识
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.Token">
+            <summary>
+            登录凭证
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.FullName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.Account">
+            <summary>
+            登录账户
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.UserID">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.UserCode">
+            <summary>
+            用户代码
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.BranchId">
+            <summary>
+            用户隶属机构
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.BumenId">
+            <summary>
+            用户隶属部门
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.Photo">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.ErpUserRoles">
+            <summary>
+            ERP拥有角色
+            </summary>
+        </member>
+        <member name="P:Qct.Domain.CommonObject.User.UserCredentials.StoreUserRoles">
+            <summary>
+            用户授权
+            </summary>
+        </member>
+        <member name="T:Qct.OrderSn">
+            <summary>
+            订单流水号,支持订单号锁定
+            </summary>
+        </member>
+        <member name="M:Qct.OrderSn.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            订单流水号初始化
+            </summary>
+            <param name="companyId">公司Id</param>
+            <param name="storeId">门店ID</param>
+            <param name="machineSn">设备编号</param>
+        </member>
+        <member name="P:Qct.OrderSn.IncreasingNumber">
+            <summary>
+            订单递增数
+            </summary>
+        </member>
+        <member name="P:Qct.OrderSn.CompanyId">
+            <summary>
+            公司ID
+            </summary>
+        </member>
+        <member name="P:Qct.OrderSn.StoreId">
+            <summary>
+            门店ID
+            </summary>
+        </member>
+        <member name="P:Qct.OrderSn.MachineSn">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="M:Qct.OrderSn.GetMachineOrderSerialNumber">
+            <summary>
+            获取设备下适用的订单流水号【2位设备号+8位日期+5位流水号】，并保证在本门店下不重复
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderSn.GetStoreOrderSerialNumber">
+            <summary>
+            获取门店下适用的订单流水号【5位门店号+2位设备号+8位日期+5位流水号】，并保证在全公司范围内不重复
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderSn.GetCurrentIncreasingNumber">
+            <summary>
+            获取当前的递增流水号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.OrderSn.SetLockIncreasingNumber">
+            <summary>
+            锁定当前流水号
+            </summary>
+        </member>
+        <member name="M:Qct.OrderSn.NextNumber">
+            <summary>
+            订单流水数据+1
+            </summary>
+        </member>
+        <member name="M:Qct.OrderSn.ResetNumber(System.Int32)">
+            <summary>
+            重置订单流水数据
+            </summary>
+            <param name="num"></param>
+        </member>
+        <member name="F:Qct.OrderState.Created">
+            <summary>
+            订单刚被创建
+            </summary>
+        </member>
+        <member name="F:Qct.OrderState.Paid">
+            <summary>
+            已支付下单【POS销售时，支付完成保存订单，消息队列发送订单支付完成消息，系统自动完成该订单】
+            </summary>
+        </member>
+        <member name="F:Qct.OrderState.Cannel">
+            <summary>
+            订单取消
+            </summary>
+        </member>
+        <member name="F:Qct.OrderState.Complete">
+            <summary>
+            已完成订单（数字为8，为配货送货上门预留）
+            </summary>
+        </member>
+        <member name="T:Qct.SaleState">
+            <summary>
+            商品销售状态
+            </summary>
+        </member>
+        <member name="F:Qct.SaleState.Normal">
+            <summary>
+            正常销售商品
+            </summary>
+        </member>
+        <member name="F:Qct.SaleState.Gift">
+            <summary>
+            赠品
+            </summary>
+        </member>
+        <member name="F:Qct.SaleState.MarketingGift">
+            <summary>
+            后台促销赠品
+            </summary>
+        </member>
+        <member name="F:Qct.SaleState.TradeInProduct">
+            <summary>
+            换购商品
+            </summary>
+        </member>
+        <member name="F:Qct.SaleState.Binding">
+            <summary>
+            捆绑商品
+            </summary>
+        </member>
+        <member name="T:Qct.Pay.PayMode">
+            <summary>
+            支付模式
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayMode.OnlyRecord">
+            <summary>
+            仅记录交易数据信息，需要手动录入支付信息，不支持接口调用第三方支付平台完成支付，即台账，如：现金支付
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayMode.PayInServer">
+            <summary>
+            由服务器实现支付接口，支付全过程在服务器完成。如：微信二维码支付
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayMode.PayInClient">
+            <summary>
+            由门店收银软件实现支付接口，支付全过程在门店收银台。如：对接POS银联机
+            </summary>
+        </member>
+        <member name="T:Qct.Pay.PayType">
+            <summary>
+            支付类型
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayType.CashPay">
+            <summary>
+            现金支付
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayType.UnionPay">
+            <summary>
+            银联支付（台账）
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayType.UnionPayCTPOSM">
+            <summary>
+            银联支付(联机)
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayType.CashCoupon">
+            <summary>
+            代金券
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayType.StoredValueCard">
+            <summary>
+            储值卡
+            </summary>
+        </member>
+        <member name="F:Qct.Pay.PayType.RongHeDynamicQRCode">
+            <summary>
+            融合支付-动态二维码
+            </summary>
+        </member>
+        <member name="T:Qct.Pay.PayWayState">
+            <summary>
+            支付项目信息（包含支付信息及支付授权状态）
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.PayWayState.PayType">
+            <summary>
+            支付类型（对应原v3版本的apicode）
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.PayWayState.Title">
+            <summary>
+            支付名称或者标题
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.PayWayState.EnableIcon">
+            <summary>
+            可用图标
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.PayWayState.DisableIcon">
+            <summary>
+            不可用图标
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.PayWayState.State">
+            <summary>
+            支付是否授权【门店级别的授权】
+            </summary>
+        </member>
+        <member name="T:Qct.Pay.StoredValueCardPayResult">
+            <summary>
+            储值卡支付结果
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.StoredValueCardPayResult.Balance">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.StoredValueCardPayResult.CardSn">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.StoredValueCardPayResult.CardholderName">
+            <summary>
+            持卡人姓名
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.StoredValueCardPayResult.CardholderPhone">
+            <summary>
+            持卡人移动电话
+            </summary>
+        </member>
+        <member name="P:Qct.Pay.StoredValueCardPayResult.PaymentAmount">
+            <summary>
+            支付金额
+            </summary>
+        </member>
+        <member name="T:Qct.Pay.WipeZeroMode">
+            <summary>
+            摸零模式
+            </summary>
+        </member>
+        <member name="T:Qct.ProductNumber">
+            <summary>
+            商品数量
+            </summary>
+        </member>
+        <member name="M:Qct.ProductNumber.#ctor(System.Decimal,Qct.Objects.Entities.SysDataDictionary,System.Boolean)">
+            <summary>
+            商品数量及单位信息
+            </summary>
+            <param name="number"></param>
+            <param name="unit"></param>
+            <param name="isWeightUnit"></param>
+        </member>
+        <member name="P:Qct.ProductNumber.UnitNumber">
+            <summary>
+            商品单位数量
+            </summary>
+        </member>
+        <member name="P:Qct.ProductNumber.Unit">
+            <summary>
+            商品单位
+            </summary>
+        </member>
+        <member name="P:Qct.ProductNumber.CountNumber">
+            <summary>
+            计件数量
+            </summary>
+        </member>
+        <member name="P:Qct.ProductNumber.IsWeight">
+            <summary>
+            是否为重量单位
+            </summary>
+        </member>
+        <member name="M:Qct.ProductNumber.ToString">
+            <summary>
+            格式化成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qct.Settings.ElectronicBalanceSetting">
+            <summary>
+            电子称功能设置
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ElectronicBalanceSetting.Enable">
+            <summary>
+            是否启用电子称功能
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ElectronicBalanceSetting.WorkPattern">
+            <summary>
+            电子称工作模式
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ElectronicBalanceSetting.PatternSettings">
+            <summary>
+            指定模式下的设置
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ElectronicBalanceSetting.Default">
+            <summary>
+            获取默认配置
+            </summary>
+        </member>
+        <member name="M:Qct.Settings.ElectronicBalanceSetting.MaybeWeightProduct(System.String)">
+            <summary>
+            是否可能为称重商品
+            </summary>
+            <param name="barcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Settings.ElectronicBalanceSetting.IsProductCode(System.String,System.String@)">
+            <summary>
+            判断条码是否由货号构成，是则返回货号
+            </summary>
+            <param name="weightBarcode"></param>
+            <param name="productCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Settings.ElectronicBalanceSetting.IsProductBarcode(System.String,System.String@)">
+            <summary>
+            判断条码是否为商品条码构成，是则返回商品条码
+            </summary>
+            <param name="weightBarcode"></param>
+            <param name="productBarcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qct.Settings.ElectronicBalanceSetting.ProductWeight(System.String,System.Nullable{System.Decimal}@,System.Nullable{System.Decimal}@)">
+            <summary>
+            获取称重条码 金额或者重量
+            </summary>
+            <param name="weightBarcode"></param>
+            <param name="amount"></param>
+            <param name="weight"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qct.Settings.POSDeviceInformation">
+            <summary>
+            收银台信息
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.CompanyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.StoreId">
+            <summary>
+            门店Id
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.MachineSn">
+            <summary>
+            设备后台编号
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.DeviceSn">
+            <summary>
+            设备唯一标识
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.StoreName">
+            <summary>
+            门店名称
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.POSDeviceInformation.CompanyShorterName">
+            <summary>
+            公司简称
+            </summary>
+        </member>
+        <member name="M:Qct.Settings.POSDeviceInformation.SetMachine(System.String,System.String)">
+            <summary>
+            设置设备信息
+            </summary>
+            <param name="machineSn"></param>
+            <param name="deviceSn"></param>
+        </member>
+        <member name="P:Qct.Settings.PrinterSettings.SalePrinterEnable">
+            <summary>
+            销售小票打印机是否可用
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.PrinterSettings.SalePrinterName">
+            <summary>
+            销售小票打印机名称
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.PrinterSettings.PrintTemplateFilePath">
+            <summary>
+            打印模板路径
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ServerConfiguration.Port">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ServerConfiguration.Schema">
+            <summary>
+            请求模式
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.ServerConfiguration.Host">
+            <summary>
+            主机
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.SystemSettings.AutoRunInWindowStart">
+            <summary>
+            开机自启动
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.SystemSettings.EnableRemoteService">
+            <summary>
+            是否启用远程服务，未开启远程服务，所有服务将只运行在门店备份环境中
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.SystemSettings.RemoteServer">
+            <summary>
+            远程服务器
+            </summary>
+        </member>
+        <member name="P:Qct.Settings.SystemSettings.MessageServer">
+            <summary>
+            消息服务器
+            </summary>
+        </member>
+        <member name="M:Qct.Settings.SystemSettings.GetCurrentServer">
+            <summary>
+            获取当前服务接口的服务器配置
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

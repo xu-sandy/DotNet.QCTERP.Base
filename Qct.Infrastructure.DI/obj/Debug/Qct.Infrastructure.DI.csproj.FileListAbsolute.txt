@@ -1,0 +1,11 @@
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Qct.Infrastructure.DI.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Qct.Infrastructure.DI.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Autofac.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Autofac.xml
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\obj\Debug\Qct.Infrastructure.DI.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\obj\Debug\Qct.Infrastructure.DI.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Qct.Infrastructure.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Newtonsoft.Json.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Qct.Infrastructure.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\bin\Debug\Newtonsoft.Json.xml
+E:\Workspace\QCT.ERP\Qct.Infrastructure.DI\obj\Debug\Qct.Infrastructure.DI.csprojResolveAssemblyReference.cache

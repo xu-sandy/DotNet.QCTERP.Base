@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{307958D7-7812-45A6-8BE9-BA25D90A9970}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qct.Infrastructure.MessageQueueServer</RootNamespace>
+    <AssemblyName>Qct.Infrastructure.MessageQueueServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Builds\CoreBuilds\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MQM</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.4.3.23, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.4.3\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.3.23, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.4.3\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.3.23, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.4.3\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.1.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.StrongName.1.2.1\lib\net45\StackExchange.Redis.StrongName.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Common, Version=1.6.6.1, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Facility, Version=1.6.6.1, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Facility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketBase, Version=1.6.6.1, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.SocketBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketEngine, Version=1.6.6.1, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.Engine.1.6.6.1\lib\net45\SuperSocket.SocketEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketService, Version=1.6.6.1, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.Engine.1.6.6.1\lib\net45\SuperSocket.SocketService.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Qct.Infrastructure.MessageQueue\ObjectModels\ClientIndetity.cs">
+      <Link>Objects\ClientIndetity.cs</Link>
+    </Compile>
+    <Compile Include="..\Qct.Infrastructure.MessageQueue\ObjectModels\FilterMode.cs">
+      <Link>Objects\FilterMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Qct.Infrastructure.MessageQueue\ObjectModels\PublisherInformaction.cs">
+      <Link>Objects\PublisherInformaction.cs</Link>
+    </Compile>
+    <Compile Include="..\Qct.Infrastructure.MessageQueue\ObjectModels\PublishItem.cs">
+      <Link>Objects\PublishItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Qct.Infrastructure.MessageQueue\ObjectModels\SocketResult.cs">
+      <Link>Objects\SocketResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Qct.Infrastructure.MessageQueue\ObjectModels\SubscribeItem.cs">
+      <Link>Objects\SubscribeItem.cs</Link>
+    </Compile>
+    <Compile Include="Exceptions\MQMException.cs" />
+    <Compile Include="Exceptions\NotAuthenticationException.cs" />
+    <Compile Include="Exceptions\SubscribeItemNotFoundException.cs" />
+    <Compile Include="Extensions\DescriptionExtensions.cs" />
+    <Compile Include="IClientChannel.cs" />
+    <Compile Include="IMessageQueueAdapter.cs" />
+    <Compile Include="IMessageQueueAgent.cs" />
+    <Compile Include="Implementations\DefaultMesssageQueueMiddlewareStorage.cs" />
+    <Compile Include="Implementations\HttpClientChannel.cs" />
+    <Compile Include="Implementations\MessageQueueAgent.cs" />
+    <Compile Include="Implementations\MQMConfigurationSection.cs" />
+    <Compile Include="Implementations\MQMServer.cs" />
+    <Compile Include="Implementations\RedisManager.cs" />
+    <Compile Include="Implementations\RedisMessageQueueAdapter.cs" />
+    <Compile Include="Implementations\SendToClientChannel.cs" />
+    <Compile Include="Implementations\SockectClientChannel.cs" />
+    <Compile Include="IMQMStorage.cs" />
+    <Compile Include="Objects\RemotePushFailureRecord.cs" />
+    <Compile Include="Objects\RemoteSubscribe.cs" />
+    <Compile Include="Objects\RemoteSubscriptionCallbackFailureRecord.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SocketCommands\AuthenticationCommand.cs" />
+    <Compile Include="SocketCommands\PubishCommand.cs" />
+    <Compile Include="SocketCommands\SubscribeCommad.cs" />
+    <Compile Include="SocketCommands\UnSubscribeCommad.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Config\log4net.config" />
+    <None Include="Config\log4net.unix.config" />
+    <None Include="packages.config" />
+    <None Include="supersocket.cmd" />
+    <None Include="supersocket.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qct.Infrastructure.Net.SocketServer\Qct.Infrastructure.Net.SocketServer.csproj">
+      <Project>{087E427D-A719-4CCC-9CB3-9E1D2AD154BD}</Project>
+      <Name>Qct.Infrastructure.Net.SocketServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Net\Qct.Infrastructure.Net.csproj">
+      <Project>{CBC291C0-6F2B-45BD-A97A-F83B06E70713}</Project>
+      <Name>Qct.Infrastructure.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure\Qct.Infrastructure.csproj">
+      <Project>{f71b0fba-864b-49d8-aceb-ccfe9d9e961e}</Project>
+      <Name>Qct.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

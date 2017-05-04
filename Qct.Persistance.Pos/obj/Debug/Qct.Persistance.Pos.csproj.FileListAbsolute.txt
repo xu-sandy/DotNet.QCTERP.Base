@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Persistance.Pos.dll.config
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Persistance.Pos.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Persistance.Pos.pdb
+E:\Workspace\QCT.ERP\Qct.Persistance.Pos\obj\Debug\Qct.Persistance.Pos.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Persistance.Pos\obj\Debug\Qct.Persistance.Pos.dll
+E:\Workspace\QCT.ERP\Qct.Persistance.Pos\obj\Debug\Qct.Persistance.Pos.pdb

@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Repository.dll.config
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Repository.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Repository.pdb
+E:\Workspace\QCT.ERP\Qct.Repository\obj\Debug\Qct.Repository.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Repository\obj\Debug\Qct.Repository.dll
+E:\Workspace\QCT.ERP\Qct.Repository\obj\Debug\Qct.Repository.pdb

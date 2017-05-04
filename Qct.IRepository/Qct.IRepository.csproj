@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8AA1AF2-5573-4EEC-A524-DB0AEF58A306}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qct.IRepository</RootNamespace>
+    <AssemblyName>Qct.IRepository</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Builds\CoreBuilds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archives\IProductBrandRepository.cs" />
+    <Compile Include="Archives\IProductCategoryRepository.cs" />
+    <Compile Include="Archives\IProductChangePriceRepository.cs" />
+    <Compile Include="Archives\IProductGroupSplitRepository.cs" />
+    <Compile Include="Archives\IProductRepository.cs" />
+    <Compile Include="Authorization\ISysStoreUserInfoRepository.cs" />
+    <Compile Include="Authorization\ISysUserRespository.cs" />
+    <Compile Include="Sale\IConsumptionPaymentRepository.cs" />
+    <Compile Include="Sale\ISaleOrderRepository.cs" />
+    <Compile Include="Systems\IDeviceRepository.cs" />
+    <Compile Include="Exceptions\NotFoundProductException.cs" />
+    <Compile Include="Exceptions\SettingException.cs" />
+    <Compile Include="OrderSystem\IMarketingRuleRepository.cs" />
+    <Compile Include="OrderSystem\IShoppingcartRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\IIndentOrderRepository.cs" />
+    <Compile Include="Systems\IImportSetRepository.cs" />
+    <Compile Include="Systems\INoticeRepository.cs" />
+    <Compile Include="Systems\IPosDeviceRepository.cs" />
+    <Compile Include="Systems\IPosElectronicBalanceSettingsRepository.cs" />
+    <Compile Include="Systems\IPosSystemSettingsRepository.cs" />
+    <Compile Include="Systems\ISysCustomMenusRepository.cs" />
+    <Compile Include="Systems\ISysDepartmentRepository.cs" />
+    <Compile Include="Systems\ISysDictionaryRepository.cs" />
+    <Compile Include="Systems\IApiLibraryRepository.cs" />
+    <Compile Include="Systems\ISysLogRepository.cs" />
+    <Compile Include="Systems\ISysMenusRepository.cs" />
+    <Compile Include="Systems\ISysRolesRepository.cs" />
+    <Compile Include="Systems\ISysWebSettingRepository.cs" />
+    <Compile Include="Systems\IWarehouseRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Allocation\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="Member\" />
+    <Folder Include="Sync\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qct.Infrastructure.Data.EntityFramework\Qct.Infrastructure.Data.EntityFramework.csproj">
+      <Project>{9B13A1E8-117D-4610-9E47-8DDDB2B79B8C}</Project>
+      <Name>Qct.Infrastructure.Data.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Data\Qct.Infrastructure.Data.csproj">
+      <Project>{a6fb22dc-deb0-4a1d-a614-8d38f7d1e2a7}</Project>
+      <Name>Qct.Infrastructure.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure\Qct.Infrastructure.csproj">
+      <Project>{F71B0FBA-864B-49D8-ACEB-CCFE9D9E961E}</Project>
+      <Name>Qct.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Objects\Qct.Objects.csproj">
+      <Project>{9C68D23A-90DD-4544-A2AC-656B6B102455}</Project>
+      <Name>Qct.Objects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

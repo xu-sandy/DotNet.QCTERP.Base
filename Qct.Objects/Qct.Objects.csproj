@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C68D23A-90DD-4544-A2AC-656B6B102455}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qct.Objects</RootNamespace>
+    <AssemblyName>Qct.Objects</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Builds\CoreBuilds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Builds\CoreBuilds\Qct.Objects.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Archives\Partials\ProductBrand.cs" />
+    <Compile Include="Entities\Archives\Partials\ProductCategory.cs" />
+    <Compile Include="Entities\Archives\Partials\ProductChangePrice.cs" />
+    <Compile Include="Entities\Archives\Partials\ProductChangePriceItem.cs" />
+    <Compile Include="Entities\Archives\Partials\ProductGroupSplit.cs" />
+    <Compile Include="Entities\Archives\Partials\ProductGroupSplitItem.cs" />
+    <Compile Include="Entities\Archives\Partials\ProductRecord.cs" />
+    <Compile Include="Entities\Archives\ProductBrand.cs" />
+    <Compile Include="Entities\Archives\ProductCategory.cs" />
+    <Compile Include="Entities\Archives\ProductChangePriceItem.cs" />
+    <Compile Include="Entities\Archives\ProductChangePrice.cs" />
+    <Compile Include="Entities\Archives\ProductGroupSplit.cs" />
+    <Compile Include="Entities\Archives\ProductGroupSplitItem.cs" />
+    <Compile Include="Entities\Archives\ProductRecord.cs" />
+    <Compile Include="Entities\Authorization\Partials\SysUserInfo.cs" />
+    <Compile Include="Entities\Authorization\SysUserInfo.cs" />
+    <Compile Include="Entities\Purchase\IndentOrder.cs" />
+    <Compile Include="Entities\Purchase\IndentOrderList.cs" />
+    <Compile Include="Entities\Purchase\partials\IndentOrder.cs" />
+    <Compile Include="Entities\Sale\ConsumptionPayment.cs" />
+    <Compile Include="Entities\Sale\Partials\SaleOrders.cs" />
+    <Compile Include="Entities\Sale\SaleDetail.cs" />
+    <Compile Include="Entities\Sale\SaleOrders.cs" />
+    <Compile Include="Entities\Sale\WipeZero.cs" />
+    <Compile Include="Entities\Systems\ApiLibrary.cs" />
+    <Compile Include="Entities\Systems\DeviceRegInfo.cs" />
+    <Compile Include="Entities\Systems\ImportSet.cs" />
+    <Compile Include="Entities\Systems\Notice.cs" />
+    <Compile Include="Entities\Systems\Partials\DeviceRegInfo.cs" />
+    <Compile Include="Entities\Systems\Partials\SysLog.cs" />
+    <Compile Include="Entities\Systems\Partials\SysRoles.cs" />
+    <Compile Include="Entities\Systems\SysCustomMenus.cs" />
+    <Compile Include="Entities\Systems\SysDepartments.cs" />
+    <Compile Include="Entities\Systems\SysDataDictionary.cs" />
+    <Compile Include="Entities\Systems\SysLimits.cs" />
+    <Compile Include="Entities\Systems\SysLog.cs" />
+    <Compile Include="Entities\Systems\SysMenus.cs" />
+    <Compile Include="Entities\Systems\SysRoles.cs" />
+    <Compile Include="Entities\Systems\SysWebSetting.cs" />
+    <Compile Include="Entities\Systems\Warehouse.cs" />
+    <Compile Include="Exceptions\MembershipCardStateFailureException.cs" />
+    <Compile Include="ValueObjects\Archives\ExpiryUnit.cs" />
+    <Compile Include="ValueObjects\Archives\MeteringMode.cs" />
+    <Compile Include="ValueObjects\Archives\ProductState.cs" />
+    <Compile Include="ValueObjects\Authorization\LoginDnsModel.cs" />
+    <Compile Include="ValueObjects\ConstValues.cs" />
+    <Compile Include="ValueObjects\Enums.cs" />
+    <Compile Include="ValueObjects\Systems\DeviceModel.cs" />
+    <Compile Include="ValueObjects\Inventory\InventoryResult.cs" />
+    <Compile Include="ValueObjects\OperateResult.cs" />
+    <Compile Include="ValueObjects\OrderSystem\ElectronicBalance\ElectronicBalanceWorkPattern.cs" />
+    <Compile Include="ValueObjects\OrderSystem\ElectronicBalance\PatternSettingItem.cs" />
+    <Compile Include="Exceptions\OrderException.cs" />
+    <Compile Include="Extensions\OrderItemExtensions.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\Gift.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\GiftOption.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\IMarketingContext.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\IMemberPrepaidOrderMarketingResult.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\IOrderMarketingResult.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\MarketingRule.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\OrderMarketingContext.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\OrderMarketingStage.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\TradeInItem.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Marketings\TradeInOption.cs" />
+    <Compile Include="ValueObjects\Member\IPrepaidOrder.cs" />
+    <Compile Include="Entities\Member\Members.cs" />
+    <Compile Include="Entities\Member\MembershipCard.cs" />
+    <Compile Include="Entities\Member\Partials\MembershipCard.cs" />
+    <Compile Include="Entities\OrderSystem\IncreasingNumber.cs" />
+    <Compile Include="Entities\OrderSystem\IOrder.cs" />
+    <Compile Include="Entities\OrderSystem\IOrderItem.cs" />
+    <Compile Include="Entities\OrderSystem\Order.cs" />
+    <Compile Include="Entities\OrderSystem\OrderItem.cs" />
+    <Compile Include="Entities\OrderSystem\OrderPay.cs" />
+    <Compile Include="ValueObjects\OrderSystem\OrderSn.cs" />
+    <Compile Include="ValueObjects\OrderSystem\OrderState.cs" />
+    <Compile Include="ValueObjects\OrderSystem\SaleState.cs" />
+    <Compile Include="Entities\OrderSystem\Shoppingcart.cs" />
+    <Compile Include="Entities\OrderSystem\ShoppingcartItem.cs" />
+    <Compile Include="Entities\OrderSystem\Partials\PayConfiguration.cs" />
+    <Compile Include="Entities\OrderSystem\PayConfiguration.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Pay\PayMode.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Pay\PayType.cs" />
+    <Compile Include="Entities\OrderSystem\PayWay.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Pay\PayWayState.cs" />
+    <Compile Include="Entities\OrderSystem\StoredValueCardPayRecord.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Pay\StoredValueCardPayResult.cs" />
+    <Compile Include="Entities\OrderSystem\StorePaymentAuthorization.cs" />
+    <Compile Include="ValueObjects\OrderSystem\Pay\WipeZeroMode.cs" />
+    <Compile Include="ValueObjects\OrderSystem\ProductNumber.cs" />
+    <Compile Include="ValueObjects\Archives\ProductType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObjects\Purchase\IndentOrderItemModel.cs" />
+    <Compile Include="ValueObjects\Purchase\IndentOrderModel.cs" />
+    <Compile Include="ValueObjects\Purchase\OrderState.cs" />
+    <Compile Include="ValueObjects\Systems\ActivityNoticeModel.cs" />
+    <Compile Include="ValueObjects\Systems\DeviceState.cs" />
+    <Compile Include="ValueObjects\Systems\DeviceType.cs" />
+    <Compile Include="ValueObjects\Systems\ERPModule.cs" />
+    <Compile Include="ValueObjects\Systems\ICompany.cs" />
+    <Compile Include="ValueObjects\Systems\LogModule.cs" />
+    <Compile Include="ValueObjects\Systems\LogType.cs" />
+    <Compile Include="ValueObjects\Systems\MenuModel.cs" />
+    <Compile Include="ValueObjects\Systems\Settings\ElectronicBalanceSetting.cs" />
+    <Compile Include="ValueObjects\Systems\Settings\POSDeviceInformation.cs" />
+    <Compile Include="ValueObjects\Systems\Settings\PrinterSettings.cs" />
+    <Compile Include="ValueObjects\Systems\Settings\ServerConfiguration.cs" />
+    <Compile Include="ValueObjects\Systems\Settings\SystemSettings.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreInformactions\StoreInformation.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\CashierCredentials.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\LoginRequest.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\StoreManagerAuthorization.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\StoreUserEntrance.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\StoreUserRole.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\StoreUserRoleType.cs" />
+    <Compile Include="Entities\Authorization\Partials\SysStoreUserInfo.cs" />
+    <Compile Include="Entities\Authorization\SysStoreUserInfo.cs" />
+    <Compile Include="ValueObjects\Authorization\StoreUser\UserCredentials.cs" />
+    <Compile Include="ValueObjects\Systems\SysDictionaryModel.cs" />
+    <Compile Include="ValueObjects\Systems\SysDepartmentsModel.cs" />
+    <Compile Include="ValueObjects\Systems\SysLimitsModel.cs" />
+    <Compile Include="ValueObjects\Systems\SysMenusModel.cs" />
+    <Compile Include="ValueObjects\Authorization\UserLoginModel.cs" />
+    <Compile Include="ValueObjects\Systems\SystemConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\Allocation\" />
+    <Folder Include="Entities\Inventory\" />
+    <Folder Include="Entities\Sync\" />
+    <Folder Include="ValueObjects\Allocation\" />
+    <Folder Include="ValueObjects\Sync\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qct.Infrastructure.Data.EntityFramework\Qct.Infrastructure.Data.EntityFramework.csproj">
+      <Project>{9B13A1E8-117D-4610-9E47-8DDDB2B79B8C}</Project>
+      <Name>Qct.Infrastructure.Data.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Log\Qct.Infrastructure.Log.csproj">
+      <Project>{789CD781-0994-4622-A1AE-2D2015045E5C}</Project>
+      <Name>Qct.Infrastructure.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.MessageQueue\Qct.Infrastructure.MessageClient.csproj">
+      <Project>{CB49AAC5-EED6-4C38-A12D-08DB73E1AA9D}</Project>
+      <Name>Qct.Infrastructure.MessageClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure\Qct.Infrastructure.csproj">
+      <Project>{F71B0FBA-864B-49D8-ACEB-CCFE9D9E961E}</Project>
+      <Name>Qct.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

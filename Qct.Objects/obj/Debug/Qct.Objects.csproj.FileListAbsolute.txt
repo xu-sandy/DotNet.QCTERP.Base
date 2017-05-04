@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Objects.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Objects.pdb
+E:\Workspace\QCT.ERP\Qct.Objects\obj\Debug\Qct.Objects.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Objects\obj\Debug\Qct.Objects.dll
+E:\Workspace\QCT.ERP\Qct.Objects\obj\Debug\Qct.Objects.pdb
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Objects.XML

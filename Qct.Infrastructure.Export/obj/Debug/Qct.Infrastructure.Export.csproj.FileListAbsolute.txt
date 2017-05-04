@@ -1,0 +1,11 @@
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\Qct.Infrastructure.Export.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\Qct.Infrastructure.Export.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\NPOI.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\NPOI.OOXML.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\bin\Debug\NPOI.xml
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\obj\Debug\Qct.Infrastructure.Export.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\obj\Debug\Qct.Infrastructure.Export.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Export\obj\Debug\Qct.Infrastructure.Export.pdb

@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.ISevices.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.ISevices.pdb
+E:\Workspace\QCT.ERP\Qct.ISevices\obj\Debug\Qct.ISevices.dll
+E:\Workspace\QCT.ERP\Qct.ISevices\obj\Debug\Qct.ISevices.pdb
+E:\Workspace\QCT.ERP\Qct.ISevices\obj\Debug\Qct.ISevices.csprojResolveAssemblyReference.cache

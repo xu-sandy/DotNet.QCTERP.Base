@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Net.SocketClient.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Net.SocketClient.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Net.SocketClient\obj\Debug\Qct.Infrastructure.Net.SocketClient.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Net.SocketClient\obj\Debug\Qct.Infrastructure.Net.SocketClient.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Net.SocketClient\obj\Debug\Qct.Infrastructure.Net.SocketClient.pdb

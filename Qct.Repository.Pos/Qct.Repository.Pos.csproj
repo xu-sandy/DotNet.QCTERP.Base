@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56E9C69C-9139-4F01-A20A-0A422B84DE2C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qct.Repository.Pos</RootNamespace>
+    <AssemblyName>Qct.Repository.Pos</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Builds\CoreBuilds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\POSRestClient.cs" />
+    <Compile Include="Common\SettingsPathHelper.cs" />
+    <Compile Include="IncreasingNumberRepository.cs" />
+    <Compile Include="MarketingRuleRepository.cs" />
+    <Compile Include="Exceptions\NetException.cs" />
+    <Compile Include="Offline\ProductOfflineRepository.cs" />
+    <Compile Include="Online\ProductOnlineRepository.cs" />
+    <Compile Include="Systems\PosDeviceRepository.cs" />
+    <Compile Include="Systems\PosElectronicBalanceSettingsRepository.cs" />
+    <Compile Include="Systems\PosSystemSettingsRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingcartRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qct.Infrastructure.Data.EntityFramework\Qct.Infrastructure.Data.EntityFramework.csproj">
+      <Project>{9B13A1E8-117D-4610-9E47-8DDDB2B79B8C}</Project>
+      <Name>Qct.Infrastructure.Data.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Data\Qct.Infrastructure.Data.csproj">
+      <Project>{A6FB22DC-DEB0-4A1D-A614-8D38F7D1E2A7}</Project>
+      <Name>Qct.Infrastructure.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Log\Qct.Infrastructure.Log.csproj">
+      <Project>{789cd781-0994-4622-a1ae-2d2015045e5c}</Project>
+      <Name>Qct.Infrastructure.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure.Net\Qct.Infrastructure.Net.csproj">
+      <Project>{CBC291C0-6F2B-45BD-A97A-F83B06E70713}</Project>
+      <Name>Qct.Infrastructure.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Infrastructure\Qct.Infrastructure.csproj">
+      <Project>{F71B0FBA-864B-49D8-ACEB-CCFE9D9E961E}</Project>
+      <Name>Qct.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.IRepository\Qct.IRepository.csproj">
+      <Project>{A8AA1AF2-5573-4EEC-A524-DB0AEF58A306}</Project>
+      <Name>Qct.IRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.ISevices\Qct.ISevices.csproj">
+      <Project>{142DE79F-2928-47E8-84FF-A028B4FFB209}</Project>
+      <Name>Qct.ISevices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Objects\Qct.Objects.csproj">
+      <Project>{9C68D23A-90DD-4544-A2AC-656B6B102455}</Project>
+      <Name>Qct.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Persistance.Pos\Qct.Persistance.Pos.csproj">
+      <Project>{3400EA8F-B575-486C-9489-8062D704B942}</Project>
+      <Name>Qct.Persistance.Pos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

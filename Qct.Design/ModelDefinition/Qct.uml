@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4a45c2f6-8ba9-4fb3-8cd8-089a8595188b"
+  name="Pharos" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="f1816c34-9fe8-43b8-9e5e-32c3556a1811">
+      <body>说明：
+1、二次开发时，支持按公司进行定制开发。
+2、通过继承DefaultMarketingService重写对应的Match方法实现对规则执行顺序、并发执行促销控制、新促销规则加入服务的开发。
+3、通过实现IMarketingResultBuilder接口对促销规则的匹配、促销结果的运算进行支持
+4、通过实现IMarketingResult接口，进行促销结果的保存以及向上层传递促销结果</body>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="6ff87da3-5179-4b01-b277-3466dce0e77d"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="db3edba4-9803-4065-8531-97549adf9bd5">
+          <propertyInstance
+            Id="0fe4cffb-8826-45ae-b6d5-71d437edc457"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="cbbaee2f-5f03-4664-bdff-ce397e1528f1">
+          <propertyInstance
+            Id="16d11f22-8cf9-4897-87a7-fd5820cc1524"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="bd394fb7-a46a-4246-84af-8ca04e5cf820">
+          <propertyInstance
+            Id="4dc35e1b-c737-491c-be06-91060ad8657d"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="4ffe3343-1315-4b1a-8b56-d0aa5343d2ec"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="30253ac3-4132-4f6f-bec0-8799f4daee8b">
+          <propertyInstance
+            Id="e59e357f-b920-4c03-8e98-ba2bbd987968"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="2e14ff7d-548d-4522-a69f-bcdbfb0079bf">
+          <propertyInstance
+            Id="678ccbfa-52a9-414b-b977-42b0e022cfaa"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="943b3f97-6bd5-45d6-8589-a7b5e2399857">
+          <propertyInstance
+            Id="f3160171-8000-4180-af21-7fc780fea3a3"
+            name="ProjectPath"
+            value="ClassTemplate=..\PharosLib\PharosLib.csproj|EnumTemplate=..\PharosLib\PharosLib.csproj|InterfaceTemplate=..\PharosLib\PharosLib.csproj|StructTemplate=..\PharosLib\PharosLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a15c41d6-2380-4a84-ba43-becb646f0c56">
+          <propertyInstance
+            Id="770f7969-f211-41be-b659-2eca23972851"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a4d8edaa-3b6a-4d59-a8ec-ee265994de96">
+          <propertyInstance
+            Id="d49a25f1-daf4-4554-877e-527ab43b9314"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a02b0863-5f2a-4f1f-ab6b-214b2ae50bd1">
+          <propertyInstance
+            Id="fef3fd08-ec6e-485d-a999-f3ca53ca7d89"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="7b35643d-c560-411f-aa8b-02177eb1363f">
+          <propertyInstance
+            Id="872f9662-9190-45b2-b1bd-44a2e1b29ce9"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="fd4ee30b-fd6a-4c75-ae4a-e280a8e9bf4f">
+      <profileInstance
+        Id="f2546f6d-15f4-46b4-aba2-6278f73401da"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="2a9e419c-fef1-40c0-a6b8-e48377e9f825">
+      <profileInstance
+        Id="b4b6efd6-358f-43a1-aa55-ede47c51b66f"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="64aef9bb-3a1b-469d-ab33-f5bb0a9f3f62"
+        LastKnownName="Infrastructure"
+        LastKnownLocation="Infrastructure.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7d9cf304-7e85-4981-9be4-11e340edc273"
+        LastKnownName="Domain"
+        LastKnownLocation="Domain.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4b9f5380-e644-4d29-8d31-93f962f72039"
+        name="deci" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f4f2e576-9575-44fd-b093-cd1b6aa56e82"
+        name="decimal" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

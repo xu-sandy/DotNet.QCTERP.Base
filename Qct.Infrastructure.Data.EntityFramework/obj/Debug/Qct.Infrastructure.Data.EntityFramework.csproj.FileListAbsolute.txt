@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Data.EntityFramework.dll.config
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Data.EntityFramework.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Data.EntityFramework.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Data.EntityFramework\obj\Debug\Qct.Infrastructure.Data.EntityFramework.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Data.EntityFramework\obj\Debug\Qct.Infrastructure.Data.EntityFramework.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Data.EntityFramework\obj\Debug\Qct.Infrastructure.Data.EntityFramework.pdb

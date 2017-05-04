@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Repository.Pos.dll.config
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Repository.Pos.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Repository.Pos.pdb
+E:\Workspace\QCT.ERP\Qct.Repository.Pos\obj\Debug\Qct.Repository.Pos.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Repository.Pos\obj\Debug\Qct.Repository.Pos.dll
+E:\Workspace\QCT.ERP\Qct.Repository.Pos\obj\Debug\Qct.Repository.Pos.pdb

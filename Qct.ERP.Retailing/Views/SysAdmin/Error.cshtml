@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Error";
+}
+<style>
+    H1 { font-family: "Verdana"; font-weight: normal; font-size: 18pt;color:#808080;font-weight:bold;margin-bottom:10px; }
+    H2 { font-family: "Verdana"; font-weight: normal; font-size: 14pt;color:#808080  }
+</style>
+<img src="~/Content/image/forbid.png" />
+<div style="width:350px;text-align:center;">
+    <h1>@TempData["type"]</h1>
+    <h2>@TempData["message"]</h2>
+</div>

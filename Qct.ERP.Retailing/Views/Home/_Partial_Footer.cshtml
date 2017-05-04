@@ -1,0 +1,6 @@
+﻿@model SysWebSetting
+
+<div class="footer">
+    <img src="@((Model != null && !Model.BottomLogo.IsNullOrEmpty()) ? Url.Content("~/SysImg/") + SysUserService.CurrentUser.CompanyId + "/" + Model.BottomLogo : Url.Content("~/SysImg/pharoslogo.png"))" />
+    Copyright © <a target="_blank" href="http://www.qcterp.com" style="color: #333;">www.qcterp.com</a> 2014-@DateTime.Now.Year
+</div>

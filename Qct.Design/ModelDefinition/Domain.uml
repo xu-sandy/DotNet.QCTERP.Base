@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7d9cf304-7e85-4981-9be4-11e340edc273"
+  name="Domain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e0454cd1-27cc-4701-b842-a77bb4060247"
+        LastKnownName="OrderSystem"
+        LastKnownLocation="OrderSystem.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cfeb31fd-c9fb-4695-be64-8ce80540061a"
+        LastKnownName="Member"
+        LastKnownLocation="Package_1606.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="56f95427-fde3-4c4f-9e3b-1a41e6681c9d"
+        LastKnownName="Marketing"
+        LastKnownLocation="Marketing.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a4acf3bf-e0d6-4b35-a5eb-310fa9bd7ae9"
+        LastKnownName="Archives"
+        LastKnownLocation="Package_1129.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

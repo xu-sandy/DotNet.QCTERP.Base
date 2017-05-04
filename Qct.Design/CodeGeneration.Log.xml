@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="代码生成/文本转换记录">
+  <MessageClass Name="Message" Label="消息" Option="显示提供相关信息的消息" />
+  <MessageClass Name="Warning" Label="警告" Option="显示警告" />
+  <MessageClass Name="Error" Label="错误" Option="显示错误" />
+  <MessageClass Name="Property" Label="属性" Option="显示元数据" />
+  <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="High" Text="已启动代码生成或文本转换。" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="名称 = ClassTemplate" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="ProjectPath = ..\PharosLib\PharosLib.csproj" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-04-11T09:47:10" Importance="Medium" Text="Pharos 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “Pharos::Domain::Marketing::DefaultMarketingService”- (Class), “Pharos::Domain::Marketing::MarketingResultDirector”- (Class), “Pharos::Domain::Marketing::MarketingServiceFactory”- (Class), “Pharos::Domain::Marketing::MarketingResultBuilderFactory”- (Class) " />
+  <Message Timestamp="2017-04-11T09:47:44" Importance="Medium" Text="新增项目: E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\PharosLib.csproj" />
+  <Message Timestamp="2017-04-11T09:47:44" Importance="Medium" Text="“Pharos::Domain::Marketing::DefaultMarketingService”- (Class) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\DefaultMarketingService.cs" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Medium" Text="“Pharos::Domain::Marketing::MarketingResultDirector”- (Class) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\MarketingResultDirector.cs" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Medium" Text="“Pharos::Domain::Marketing::MarketingServiceFactory”- (Class) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\MarketingServiceFactory.cs" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Medium" Text="“Pharos::Domain::Marketing::MarketingResultBuilderFactory”- (Class) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\MarketingResultBuilderFactory.cs" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="名称 = InterfaceTemplate" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="ProjectPath = ..\PharosLib\PharosLib.csproj" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Medium" Text="Pharos 的文本模板绑定: “InterfaceTemplate”会将 InterfaceTemplate.t4 应用于: “Pharos::Domain::Marketing::IMarketingService”- (Interface), “Pharos::Domain::Marketing::IMarketingResultBuilder”- (Interface), “Pharos::Domain::Marketing::IMarketingResult”- (Interface) " />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Medium" Text="“Pharos::Domain::Marketing::IMarketingService”- (Interface) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\IMarketingService.cs" />
+  <Message Timestamp="2017-04-11T09:47:45" Importance="Medium" Text="“Pharos::Domain::Marketing::IMarketingResultBuilder”- (Interface) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\IMarketingResultBuilder.cs" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Medium" Text="“Pharos::Domain::Marketing::IMarketingResult”- (Interface) : 成功(已创建文件) - E:\DaoCheng\Projects\Pharos\V4.0\PharosLib\GeneratedCode\Domain\Marketing\IMarketingResult.cs" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="名称 = StructTemplate" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="ProjectPath = ..\PharosLib\PharosLib.csproj" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Medium" Text="Pharos 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “Pharos::Domain::Marketing::DefaultMarketingService”- (Class), “Pharos::Domain::Marketing::MarketingResultDirector”- (Class), “Pharos::Domain::Marketing::MarketingServiceFactory”- (Class), “Pharos::Domain::Marketing::MarketingResultBuilderFactory”- (Class) " />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::DefaultMarketingService”- (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::MarketingResultDirector”- (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::MarketingServiceFactory”- (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::MarketingResultBuilderFactory”- (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 10 元素。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (InterfaceRealization): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“f1816c34-9fe8-43b8-9e5e-32c3556a1811”- (Comment): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="Diagnostic" Text="“Pharos::Domain::Marketing::”- (Dependency): 没有绑定的模板。" />
+  <Message Timestamp="2017-04-11T09:47:46" Importance="High" Text="代码生成完成。错误: 0。警告: 0。" />
+</Log>

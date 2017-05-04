@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = ConstPool.Page_Title;
+    Layout = "~/Views/Shared/_FormLayout.cshtml";
+}
+<style>
+    tr {
+        display: block;
+        margin: 5px 0;
+    }
+</style>
+<div class="default-form">
+    @using (Html.BeginForm())
+    {
+        <table style="padding:10px;">
+            <tr>
+                <td class="label-toolbar">
+                    <span>门店：</span>
+                </td>
+                <td class="input-toolbar">
+                    @Html.DropDownList("Store", ViewBag.stores as List<SelectListItem>, new { @class = "easyui-combobox datacontrol", data_options = "editable:false" })
+
+                    <a class="easyui-linkbutton cus1 linkbtn" style="text-align:left" data-options="iconCls:'icon-ok'" onclick="create()">生成</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id="code" rows="10" cols="55"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="easyui-linkbutton cus1 linkbtn" data-options="iconCls:'icon-redo'" onclick="copy()">复制</a>
+                </td>
+            </tr>
+        </table>
+    }
+</div>
+<script>
+    function create() {
+        var storeId = $("#Store").val();
+        $.post("@Url.Action("CreateSecurityCode")", { storeId: storeId }, function (re) {
+            $("#code").html(re);
+        }, "text")
+    }
+    function copy() {
+        var code = document.getElementById("code");
+        if (code.value == "") {
+            return;
+        }
+        code.select();
+        document.execCommand("Copy");
+        $.messager.alert("提示", "设备注册码已复制到粘贴板", "info");
+    }
+</script>
+

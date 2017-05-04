@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{142DE79F-2928-47E8-84FF-A028B4FFB209}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qct.ISevices</RootNamespace>
+    <AssemblyName>Qct.ISevices</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Builds\CoreBuilds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization\ISysUserService.cs" />
+    <Compile Include="Exceptions\MachineSNOverflowException.cs" />
+    <Compile Include="ICacheService.cs" />
+    <Compile Include="OrderSystem\IMarketingResultBuilder.cs" />
+    <Compile Include="OrderSystem\IMarketingService.cs" />
+    <Compile Include="OrderSystem\IMemberPrepaidOrderMarketingResultBuilder.cs" />
+    <Compile Include="OrderSystem\IOrderMarketingResultBuilder.cs" />
+    <Compile Include="OrderSystem\IOrderService.cs" />
+    <Compile Include="Systems\IDeviceService.cs" />
+    <Compile Include="Systems\IImportSetService.cs" />
+    <Compile Include="Systems\IPosSettingService.cs" />
+    <Compile Include="OrderSystem\IShoppingcartService.cs" />
+    <Compile Include="Authorization\IStoreUserService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Systems\ISysMenuService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Allocation\" />
+    <Folder Include="Archives\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="Member\" />
+    <Folder Include="Purchase\" />
+    <Folder Include="Sync\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qct.Infrastructure\Qct.Infrastructure.csproj">
+      <Project>{F71B0FBA-864B-49D8-ACEB-CCFE9D9E961E}</Project>
+      <Name>Qct.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qct.Objects\Qct.Objects.csproj">
+      <Project>{9c68d23a-90dd-4544-a2ac-656b6b102455}</Project>
+      <Name>Qct.Objects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

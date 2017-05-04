@@ -1,0 +1,6 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Persistance.dll.config
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Persistance.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Persistance.pdb
+E:\Workspace\QCT.ERP\Qct.Persistance\obj\Debug\Qct.Persistance.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Persistance\obj\Debug\Qct.Persistance.dll
+E:\Workspace\QCT.ERP\Qct.Persistance\obj\Debug\Qct.Persistance.pdb

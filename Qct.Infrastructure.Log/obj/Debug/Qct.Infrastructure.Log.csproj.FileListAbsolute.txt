@@ -1,0 +1,5 @@
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Log.dll
+E:\Workspace\QCT.ERP\Builds\CoreBuilds\Qct.Infrastructure.Log.pdb
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Log\obj\Debug\Qct.Infrastructure.Log.csprojResolveAssemblyReference.cache
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Log\obj\Debug\Qct.Infrastructure.Log.dll
+E:\Workspace\QCT.ERP\Qct.Infrastructure.Log\obj\Debug\Qct.Infrastructure.Log.pdb
